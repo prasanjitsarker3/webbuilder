@@ -3,7 +3,7 @@ import React from "react";
 const ProfitMarketingPartner = () => {
   return (
     <div className="bg-[#e6dcfb]">
-      <div className=" w-full container mx-auto md:px-8 px-4 py-12">
+      <div className=" w-full container mx-auto md:px-8 px-4 py-12 2xl:py-20">
         <div className=" flex flex-col lg:flex-row gap-12">
           <div className=" w-full md:w-1/2 flex flex-col justify-center">
             <h1 className=" font-semibold text-5xl">Profit Your </h1>

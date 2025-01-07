@@ -1,4 +1,4 @@
-import { Mail, RefreshCw, Search } from "lucide-react";
+import { BarChart, Edit, Globe, Mail, RefreshCw, Search } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -34,11 +34,38 @@ const DigitalSolution = () => {
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
+    {
+      title: "Analytics Tracking",
+      description:
+        "Use these insights to refine strategies and enhance overall effectiveness.",
+      icon: BarChart, // Replace with the actual icon from Lucide
+      bgColor: "bg-[#F7F5FF]",
+      iconBg: "bg-[#F1EDFF]",
+      iconColor: "text-[#7B61FF]",
+    },
+    {
+      title: "Quality Writing",
+      description:
+        "Craft engaging and informative content that provides value. Compelling clear structure.",
+      icon: Edit,
+      bgColor: "bg-[#F7F5FF]",
+      iconBg: "bg-[#F1EDFF]",
+      iconColor: "text-[#7B61FF]",
+    },
+    {
+      title: "Digital Marketing",
+      description:
+        "Develop and execute targeted digital campaigns across various channels such as social media.",
+      icon: Globe,
+      bgColor: "bg-[#F7F5FF]",
+      iconBg: "bg-[#F1EDFF]",
+      iconColor: "text-[#7B61FF]",
+    },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="w-full container mx-auto md:px-8 px-4 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:gap-12 ">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
@@ -75,12 +102,11 @@ const DigitalSolution = () => {
                     {service.description}
                   </p>
 
-                  <Link
-                    href={service.link}
-                    className="inline-block text-gray-900 font-medium hover:text-white transition-colors underline decoration-1 underline-offset-4"
+                  <p
+                    className="inline-block text-gray-900 font-medium group-hover:text-white transition-colors underline decoration-1 underline-offset-4"
                   >
                     View Search
-                  </Link>
+                  </p>
                 </div>
               </div>
             </div>

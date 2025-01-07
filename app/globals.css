@@ -7,3 +7,9 @@
 body {
   @apply font-sans;
 }
+.custom-rounded {
+  border-top-left-radius: 9999px; /* Fully round the top-left corner */
+  border-bottom-left-radius: 9999px; /* Fully round the bottom-left corner */
+  border-top-right-radius: 24px; /* Partially round the top-right corner */
+  border-bottom-right-radius: 0px; /* No rounding on the bottom-right corner */
+}
