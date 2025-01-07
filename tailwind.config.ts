@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["'Plus Jakarta Sans'", "sans-serif"],
+        sans: ["Plus Jakarta Sans", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
@@ -17,10 +17,11 @@ export default {
         primary: {
           DEFAULT: "#824EEB",
           light: "#6366F1",
-          dark: "#3730A3"
+          dark: "#3730A3",
         },
         backgroundImage: {
-          'gradient-purple': "linear-gradient(180deg, #F9F5FF 0%, #F3EEFF 100%)",
+          "gradient-purple":
+            "linear-gradient(180deg, #F9F5FF 0%, #F3EEFF 100%)",
         },
       },
     },

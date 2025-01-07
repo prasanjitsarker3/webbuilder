@@ -1,9 +1,10 @@
 import { Star } from "lucide-react";
+import VideoBanner from "./BannerVideo";
 
 const MainBanner = () => {
   return (
-    <div>
-      <main className=" relative h-[90vh] bg-gradient-to-b from-white to-[#CAB3F6] rounded-b-[40px] ">
+    <div className="">
+      <main className=" relative h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#CAB3F6] rounded-b-[40px] ">
         <div className=" w-ful h-full container mx-auto my-0 md:px-8 px-4 flex flex-col justify-center  items-center ">
           <div>
             {/* Testimonial Section */}
@@ -53,12 +54,12 @@ const MainBanner = () => {
 
             {/* Hero Content */}
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-style text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="heading-style text-2xl  md:text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-6 leading-tight">
                 Ignite Your <span className="italic-text">Growth</span> with
                 <br />
                 Expert <span className="italic-text">Marketing</span> Solutions
               </h1>
-              <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+              <p className="text-gray-700 text-base md:text-lg 2xl:text-xl mb-8 max-w-3xl mx-auto">
                 Break through barriers and reach new heights with our dynamic
                 marketing strategies. Let's turn your growth potential into
                 real, measurable success
@@ -90,7 +91,6 @@ const MainBanner = () => {
           </div>
         </div>
       </main>
-      
     </div>
   );
 };

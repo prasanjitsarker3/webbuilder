@@ -43,9 +43,7 @@ const Header = () => {
   return (
     <motion.header
       className={` ${
-        scrolling
-          ? "w-full fixed top-0  z-40 bg-white"
-          : "fixed w-full z-40 "
+        scrolling ? "w-full fixed top-0  z-40 bg-white" : "fixed w-full z-40 "
       }`}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -67,32 +65,29 @@ const Header = () => {
 
           {/* Second Div */}
           <div className=" hidden md:block flex-1 flex justify-center items-center">
-            <div className="flex justify-center items-center text-center gap-6">
-              <Link href={"/"} className="text-lg text-[#824EEB] cursor-pointer">
+            <div className=" text-sm lg:text-base 2xl:text-lg flex items-center text-center gap-4 2xl:gap-6">
+              <Link href={"/"} className=" text-[#824EEB] cursor-pointer">
                 Home
               </Link>
 
               <Link
                 href={"/services"}
-                className="text-lg text-[#824EEB] cursor-pointer"
+                className=" text-[#824EEB] cursor-pointer"
               >
                 Services
               </Link>
               <Link
                 href={"/gallery"}
-                className="text-lg text-[#824EEB] cursor-pointer"
+                className=" text-[#824EEB] cursor-pointer"
               >
                 Gallery
               </Link>
-              <Link
-                href={"/about"}
-                className="text-lg text-[#824EEB] cursor-pointer"
-              >
+              <Link href={"/about"} className=" text-[#824EEB] cursor-pointer">
                 About Us
               </Link>
               <Link
                 href={"/contact"}
-                className="text-lg text-[#824EEB] cursor-pointer"
+                className=" text-[#824EEB] cursor-pointer"
               >
                 Contact
               </Link>
@@ -103,7 +98,9 @@ const Header = () => {
           <div className="flex-1 flex items-center gap-5 justify-end md:pr-0 pr-12">
             <button
               className={`py-2 2xl:py-3 px-6 ${
-                scrolling ? " border border-[#824EEB]" : " border border-[#824EEB] "
+                scrolling
+                  ? " border border-[#824EEB]"
+                  : " border border-[#824EEB] "
               }  text-[#824EEB] rounded-full flex items-center gap-2`}
             >
               Get in touch <MoveUpRight size={16} />
