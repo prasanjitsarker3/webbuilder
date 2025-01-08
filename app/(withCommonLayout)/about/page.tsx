@@ -1,7 +1,9 @@
+import AboutMainBanner from "@/app/src/pages/About/AboutMainBanner";
+
 const AboutPage=() =>{
     return (
         <div>
-            <h1>About Page information</h1>
+           <AboutMainBanner/>
         </div>
     )
 }

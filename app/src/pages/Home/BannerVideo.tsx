@@ -42,7 +42,7 @@ const VideoBanner = () => {
 
   return (
     <div className=" py-5">
-      <div className="relative w-[95%]  lg:w-[70%] mx-auto h-96 flex justify-center items-center rounded-3xl">
+      <div className="relative w-[95%]  lg:w-[70%] mx-auto h-96 2xl:h-[30rem] flex justify-center items-center rounded-3xl">
         {/* Video */}
         <video
           ref={videoRef}
@@ -59,13 +59,23 @@ const VideoBanner = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center space-y-4 text-white text-center rounded-3xl">
-          {/* Play/Pause Button */}
-          <button
-            onClick={togglePlay}
-            className="flex items-center justify-center w-16 h-16 2xl:w- 2xl:h-20 bg-white/20 text-primary rounded-full backdrop-blur-md hover:bg-white/40 transition-all"
-          >
-            {isPlaying ? <Pause size={25} /> : <Play size={25} />}
-          </button>
+          <div className=" w-20 h-20 bg-white bg-opacity-10 rounded-full flex justify-center items-center">
+            <div className=" w-16 h-16 bg-white bg-opacity-30 rounded-full flex justify-center items-center">
+              <button
+                onClick={togglePlay}
+                className="flex items-center justify-center w-12 h-12 bg-white bg-opacity-45 text-primary rounded-full transition-all"
+              >
+                {isPlaying ? <Pause size={25} /> : <Play size={25} />}
+              </button>
+            </div>
+
+            {/* <button
+              onClick={togglePlay}
+              className="flex items-center justify-center w-16 h-16 2xl:w- 2xl:h-20 bg-white/20 text-primary rounded-full backdrop-blur-md hover:bg-white/40 transition-all"
+            >
+              {isPlaying ? <Pause size={25} /> : <Play size={25} />}
+            </button> */}
+          </div>
         </div>
       </div>
     </div>

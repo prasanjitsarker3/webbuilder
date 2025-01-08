@@ -94,7 +94,7 @@ const PricingCard = () => {
           <button
             onClick={() => setIsMonthly(!isMonthly)}
             className={`relative w-16 h-7 bg-gray-300 rounded-full transition ${
-              isMonthly ? "bg-purple-600" : "bg-gray-300"
+              isMonthly ? "bg-gray-300" : "bg-gray-300"
             }`}
           >
             <span

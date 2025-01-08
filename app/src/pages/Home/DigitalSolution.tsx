@@ -65,6 +65,9 @@ const DigitalSolution = () => {
 
   return (
     <div className="w-full container mx-auto md:px-8 px-4 py-16">
+      <h1 className="text-4xl md:text-5xl font-bold text-center pb-12 2xl:pb-16">
+      All Round <span className="italic">Digital Solution</span>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:gap-12 ">
         {services.map((service, index) => {
           const Icon = service.icon;
@@ -102,9 +105,7 @@ const DigitalSolution = () => {
                     {service.description}
                   </p>
 
-                  <p
-                    className="inline-block text-gray-900 font-medium group-hover:text-white transition-colors underline decoration-1 underline-offset-4"
-                  >
+                  <p className="inline-block text-gray-900 font-medium group-hover:text-white transition-colors underline decoration-1 underline-offset-4">
                     View Search
                   </p>
                 </div>

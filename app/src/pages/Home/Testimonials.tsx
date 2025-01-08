@@ -1,54 +1,52 @@
-"use client"
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import React, { useState } from "react";
+"use client";
 
-const testimonials = [
+import { useState } from "react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import Image from "next/image";
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  quote: string;
+  rating: number;
+  image: string;
+}
+
+export const testimonials: Testimonial[] = [
   {
+    id: 1,
     name: "Alex Johnson",
     role: "Marketing Director",
-    review:
-      "Ignite Visibility's detailed-oriented efforts have produced results, including significant increases in both organic rankings and leads. Professional, committed, and experienced.",
-    image: "/path/to/image1.jpg", // Replace with actual image URLs
+    quote:
+      "Ignite Visibility's detailed-oriented efforts have produced results, including significant increases in both organic rankings and leads. Professional, committed, and experienced, the team executes efficient.",
     rating: 5,
+    image: "https://media.istockphoto.com/id/997773960/photo/handsome-young-businessman.jpg?s=612x612&w=0&k=20&c=ltWzrGrzERzUjbtkAm1zCPO7ri_M3AICgsq9eWard_I=",
   },
   {
-    name: "Emily Carter",
+    id: 2,
+    name: "Sarah Miller",
     role: "CEO",
-    review:
-      "Their strategy was innovative, and their execution was flawless. The team ensured our growth was sustainable.",
-    image: "/path/to/image2.jpg",
+    quote:
+      "The team's innovative approach and dedication to excellence have transformed our digital presence. Their strategic insights and consistent delivery of results have made them an invaluable partner experienced.",
     rating: 5,
+    image: "https://media.istockphoto.com/id/175358980/photo/confident-executive-posing.jpg?s=612x612&w=0&k=20&c=fhxBfpqZtRUgp7EJK4NWtvZJqu2NkG09heLulS3gZBU=",
   },
   {
-    name: "Michael Lee",
-    role: "Tech Lead",
-    review:
-      "The team delivered impressive results and ensured that all our requirements were met in a timely manner.",
-    image: "/path/to/image3.jpg",
+    id: 3,
+    name: "David Chen",
+    role: "Operations Manager",
+    quote:
+      "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
     rating: 5,
-  },
-  {
-    name: "Sophia Brown",
-    role: "Product Manager",
-    review:
-      "Highly recommend their services! Their expertise is unmatched, and they truly understand client needs.",
-    image: "/path/to/image4.jpg",
-    rating: 5,
-  },
-  {
-    name: "James Wilson",
-    role: "Entrepreneur",
-    review:
-      "They went above and beyond to ensure our satisfaction. Their attention to detail was remarkable.",
-    image: "/path/to/image5.jpg",
-    rating: 5,
+    image: "https://media.istockphoto.com/id/1320492251/photo/low-key-portrait-of-handsome-indian-young-businessman-looking-at-the-camera-low-key-side-view.jpg?s=612x612&w=0&k=20&c=X7n4Epc5bRq8B9tWaJU3tiucAVzaas1g3eVtqbn7oSg=",
   },
 ];
 
-const Testimonials = () => {
+export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
+  const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
@@ -60,54 +58,59 @@ const Testimonials = () => {
     );
   };
 
-  const { name, role, review, image, rating } = testimonials[currentIndex];
+  const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="bg-gray-100 py-12 px-6 md:px-16">
-      <h2 className="text-center text-3xl font-semibold mb-8">
-        Hear from Our <span className="italic font-bold">Satisfied Clients</span>
+    <div className=" w-full container mx-auto md:px-8 px-4 py-16">
+      <h2 className="text-center text-4xl md:text-5xl font-bold mb-16">
+        Hear from Our <span className="italic">Satisfied</span> Clients
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        <img
-          src={image}
-          alt={name}
-          className="w-40 h-40 rounded-full object-cover shadow-lg"
-        />
-        <div className="text-center md:text-left">
-          <p className="text-lg italic text-gray-700 mb-4">
-            <span className="text-purple-500 text-3xl">“</span>
-            {review}
-            <span className="text-purple-500 text-3xl">”</span>
-          </p>
-          <h3 className="text-xl font-bold">{name}</h3>
-          <p className="text-sm text-gray-500">{role}</p>
-          <div className="flex justify-center md:justify-start mt-2">
-            {Array(rating)
-              .fill(0)
-              .map((_, i) => (
-                <span key={i} className="text-yellow-500 text-lg">
-                  ★
-                </span>
+
+      <div className="grid grid-cols-12 items-center justify-center gap-8  ">
+        <div className=" col-span-5 relative h-[32rem] w-[26rem]">
+          <Image
+            src={currentTestimonial.image}
+            alt={currentTestimonial.name}
+            width={400}
+            height={500}
+            className="rounded-lg h-full w-full object-cover"
+          />
+          <div className="absolute w-[85%] left-1/2 transform -translate-x-1/2 bottom-6 bg-[#8257E9] text-white p-4 rounded-lg space-y-1">
+            <div className="flex justify-center gap-1">
+              {[...Array(currentTestimonial.rating)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-current text-yellow-400" />
               ))}
+            </div>
+            <h3 className="font-semibold text-lg text-center">{currentTestimonial.name}</h3>
+            <p className="text-sm opacity-90 text-center" >{currentTestimonial.role}</p>
+          </div>
+        </div>
+
+        <div className=" col-span-6 relative">
+          <div className="text-6xl text-[#8257E9] font-serif absolute -top-8 left-0">
+            <Image src={"/testiic.svg"} alt="logo" width={60} height={60} className=" h-12 w-12"/>
+          </div>
+          <blockquote className="text-2xl md:text-3xl 2xl:text-4xl italic text-gray-700 mb-8 relative z-10 pt-8">
+            " {currentTestimonial.quote} "
+          </blockquote>
+          <div className="flex gap-4">
+            <button
+              onClick={handlePrevious}
+              className="p-4 rounded-full bg-[#8257E9] text-white hover:bg-[#724CC7] transition-colors"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={handleNext}
+              className="p-4 rounded-full bg-[#8257E9] text-white hover:bg-[#724CC7] transition-colors"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8 gap-4">
-        <button
-          onClick={handlePrev}
-          className="p-2 bg-purple-500 text-white rounded-full shadow-md hover:bg-purple-700 transition"
-        >
-          <ArrowLeft size={24} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="p-2 bg-purple-500 text-white rounded-full shadow-md hover:bg-purple-700 transition"
-        >
-          <ArrowRight size={24} />
-        </button>
-      </div>
     </div>
   );
-};
-
-export default Testimonials;
+}
