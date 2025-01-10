@@ -80,10 +80,11 @@ const PricingCard = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto py-16">
+    <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto pb-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8">
-          Choose Your <span className="italic">Flexible</span> Plan
+        <h1 className=" text-3xl md:text-4xl 2xl:text-5xl font-bold mb-8">
+          Choose Your <span className="italic text-primary ">Flexible</span>{" "}
+          Plan
         </h1>
 
         {/* Custom Switch */}
@@ -118,9 +119,9 @@ const PricingCard = () => {
                 plan.isPopular ? "bg-purple-600 text-white" : "bg-white"
               }`}
             >
-              <div className="p-6">
+              <div className=" p-5 2xl:p-6">
                 <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 2xl:mb-6 ${
                     plan.isPopular ? "bg-white/20" : "bg-purple-100"
                   }`}
                 >
@@ -133,14 +134,14 @@ const PricingCard = () => {
 
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <p
-                  className={`mb-6 ${
+                  className={` mb-4 2xl:mb-6 ${
                     plan.isPopular ? "text-white/90" : "text-gray-600"
                   }`}
                 >
                   {plan.description}
                 </p>
 
-                <div className="mb-6">
+                <div className=" mb-4 2xl:mb-6">
                   <span className="text-5xl font-bold">${price}</span>
                   <span
                     className={`ml-2 ${
@@ -151,7 +152,7 @@ const PricingCard = () => {
                   </span>
                 </div>
 
-                <ul className="space-y-4 mb-8">
+                <ul className=" space-y-2 2xl:space-y-4 mb-4 2xl:mb-8">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <Check

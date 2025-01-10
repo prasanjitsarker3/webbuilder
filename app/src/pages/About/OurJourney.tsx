@@ -9,9 +9,9 @@ const OurJourney = () => {
           {/* Left Content */}
           <div className="space-y-6 relative">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Our <span className="italic">Journey</span>
+              Our <span className="italic text-primary">Journey</span>
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
+            <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xl">
               We started as a small, passionate team of marketers and
               strategists with a shared vision—to help businesses grow in the
               digital landscape. Over the years, we have expanded into a full-
@@ -32,30 +32,13 @@ const OurJourney = () => {
                 View Our Portfolio
               </Link>
             </div>
-            {/* Decorative Arrow */}
-            <div className="hidden lg:block absolute -bottom-12 right-0 transform translate-x-1/2">
-              <svg
-                width="120"
-                height="120"
-                viewBox="0 0 120 120"
-                className="text-[#7C3AED]"
-              >
-                <path
-                  d="M20 80 Q 40 80, 50 60 T 100 40"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div>
           </div>
 
           {/* Right Image Grid */}
           <div className="">
-            <div className="grid grid-cols-12 gap-12 relative">
+            <div className="grid grid-cols-12 gap-2 md:gap-12 relative">
               {/* Top Right Image */}
-              <div className="col-span-6 space-y-7 w-full h-[28rem]">
+              <div className="col-span-6 space-y-7 w-full h-[28rem] ">
                 <div className="h-1/2 w-full rounded-3xl flex justify-center lg:justify-end ">
                   <Image
                     src={
@@ -79,7 +62,7 @@ const OurJourney = () => {
                   />
                 </div>
               </div>
-              <div className="col-span-6 space-y-7 w-full h-[28rem] mt-16">
+              <div className="col-span-6 space-y-7 w-full h-[28rem] mt-16 ">
                 <div className="h-1/2 rounded-3xl">
                   <Image
                     src={

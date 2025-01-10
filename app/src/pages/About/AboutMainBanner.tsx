@@ -41,15 +41,16 @@ const AboutMainBanner = () => {
 
   return (
     <div>
-      <section className="min-h-[550px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
+      <section className="min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-gray-900 mb-8">
-              Driving <span className="italic">Success</span> Together with{" "}
-              <span className="italic">Innovation</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
+              Driving <span className="italic text-primary">Success</span>{" "}
+              Together with{" "}
+              <span className="italic text-primary">Innovation</span>
             </h1>
 
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-lg 2xl:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
               We integrate creativity, strategic thinking, and innovative
               technology to help businesses unlock their full potential, adapt
               to changing
@@ -62,7 +63,7 @@ const AboutMainBanner = () => {
       </section>
       <section className=" w-full container  mx-auto md:px-8 px-4 py-16 sm:py-24">
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-4 mb-16">
           <div className="md:col-span-3">
             <div className="rounded-2xl overflow-hidden">
               <Image
@@ -70,18 +71,18 @@ const AboutMainBanner = () => {
                 alt={images[0].alt}
                 width={600}
                 height={400}
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[230px] md:h-[370px] 2xl:h-[400px] object-cover"
               />
             </div>
           </div>
-          <div className="md:col-span-3 md:mt-12">
+          <div className="md:col-span-3 mt-0 md:mt-16">
             <div className="rounded-2xl overflow-hidden">
               <Image
                 src={images[1].src}
                 alt={images[1].alt}
                 width={500}
                 height={300}
-                className="w-full h-[250px] object-cover"
+                className="w-full h-[230px] 2xl:h-[250px] object-cover"
               />
             </div>
           </div>
@@ -92,18 +93,18 @@ const AboutMainBanner = () => {
                 alt={images[2].alt}
                 width={600}
                 height={400}
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[230px] md:h-[370px] 2xl:h-[400px] object-cover"
               />
             </div>
           </div>
-          <div className="md:col-span-3 mt-12">
+          <div className="md:col-span-3 mt-0 md:mt-12">
             <div className="rounded-2xl overflow-hidden">
               <Image
                 src={images[3].src}
                 alt={images[3].alt}
                 width={500}
                 height={300}
-                className="w-full h-[250px] object-cover"
+                className="w-full h-[230px] 2xl:h-[250px] object-cover"
               />
             </div>
           </div>

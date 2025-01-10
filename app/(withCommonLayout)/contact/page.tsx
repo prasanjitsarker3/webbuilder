@@ -18,15 +18,15 @@ const ContactPage = () => {
   };
   return (
     <div>
-      <section className="min-h-[500px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
+      <section className="min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-gray-900 mb-8">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
               Driving <span className="italic">Success</span> Together with{" "}
               <span className="italic">Innovation</span>
             </h1>
 
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-lg 2xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We integrate creativity, strategic thinking, and innovative
               technology to help businesses unlock their full potential, adapt
               to changing
@@ -35,7 +35,6 @@ const ContactPage = () => {
         </div>
 
         {/* Decorative gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-purple-200/50 to-transparent pointer-events-none" />
       </section>
 
       <div className="container mx-auto md:px-8 px-4 py-16">
@@ -43,10 +42,10 @@ const ContactPage = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold">
-                We're Here To <span className="italic">Help</span>
+              <h1 className="text-3xl md:text-4xl font-bold">
+                We're Here To <span className="italic text-primary">Help</span>
                 <br />
-                You <span className="italic">Grow</span>
+                You <span className="italic text-primary">Grow</span>
               </h1>
               <p className="text-gray-600 max-w-md">
                 Whether you're scheduling your first consultation or a follow-up
@@ -89,7 +88,7 @@ const ContactPage = () => {
           </div>
 
           {/* Right Form */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
+          <div className=" border rounded-3xl p-8">
             <div className="space-y-6">
               <div className="space-y-1">
                 <h2 className="text-2xl font-semibold">
@@ -168,7 +167,7 @@ const ContactPage = () => {
                     </label>
                     <textarea
                       id="message"
-                      rows={4}
+                      rows={2}
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
                       value={formData.message}
                       onChange={(e) =>

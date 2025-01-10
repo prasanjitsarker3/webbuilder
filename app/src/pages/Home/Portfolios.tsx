@@ -33,23 +33,20 @@ const Portfolio = () => {
   return (
     <div>
       <section className="py-16 w-full container mx-auto md:px-8 px-4 ">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h1 className="text-4xl 2xl:text-5xl font-bold text-center mb-8 2xl:mb-12">
           Browse Our Portfolios{" "}
-          <span className="italic">Across industries</span>
+          <span className="italic text-primary">Across industries</span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <div
-              key={index}
-              className="group overflow-hidden rounded-[32px]"
-            >
+            <div key={index} className="group overflow-hidden rounded-[32px]">
               {/* Image Container with gradient overlay */}
               <div className="relative aspect-[4/3] overflow-hidden  m-3 bg-gradient-to-b from-purple-50 to-purple-100 rounded-xl">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300 rounded-xl "
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300 rounded-xl cursor-pointer "
                 />
                 <div className="absolute bottom-0 right-0">
                   <div className="bg-white w-16 h-16 p-2 rounded-l-full rounded-tr-3xl">
@@ -61,12 +58,13 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div className="px-6 py-4 ">
-                <h2 className="text-2xl font-bold mb-3 text-gray-900">
+              <div className="px-6 py-2 2xl:py-4 ">
+                <h2 className=" text-xl 2xl:text-2xl font-bold mb-2 2xl:mb-3 text-gray-900">
                   {item.title}
                 </h2>
-                <p className="text-gray-600 text-base">{item.description}</p>
-
+                <p className="text-gray-600 text-sm 2xl:text-base">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

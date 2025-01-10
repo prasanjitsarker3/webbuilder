@@ -24,7 +24,7 @@ export default function HomePage() {
       <DigitalSolution />
       <Portfolio />
       <PricingCard />
-      {/* <Testimonials/> */}
+      <Testimonials />
       <TeamMember />
       <BlogSection />
       <Consultation />

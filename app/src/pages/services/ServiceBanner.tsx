@@ -6,7 +6,7 @@ import React from "react";
 const ServiceBanner = () => {
   return (
     <div>
-      <div className="container mx-auto md:px-8 px-4  py-28">
+      <div className="container mx-auto md:px-8 px-4  pt-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Left Content */}
           <div>

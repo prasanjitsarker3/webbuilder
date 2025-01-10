@@ -95,16 +95,18 @@ const Header = () => {
           </div>
 
           {/* Third Div */}
-          <div className=" hidden md:block flex-1  flex items-center gap-5 justify-end md:pr-0 pr-12">
-            <button
-              className={`py-2 2xl:py-3 px-6 ${
-                scrolling
-                  ? " border border-[#824EEB]"
-                  : " border border-[#824EEB] "
-              }  text-[#824EEB] rounded-full flex items-center gap-2`}
-            >
-              Get in touch <MoveUpRight size={16} />
-            </button>
+          <div className="hidden md:block flex-1">
+            <div className="   flex items-center gap-5 justify-end md:pr-0 pr-12">
+              <button
+                className={`py-2 2xl:py-3 px-6 ${
+                  scrolling
+                    ? " border border-[#824EEB]"
+                    : " border border-[#824EEB] "
+                }  text-[#824EEB] rounded-full flex items-center gap-2`}
+              >
+                Get in touch <MoveUpRight size={16} />
+              </button>
+            </div>
           </div>
           <button className="md:hidden text-[#824EEB]" onClick={toggleMenu}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}

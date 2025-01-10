@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function MissionVision() {
   return (
     <div>
- 
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section */}
@@ -34,9 +33,9 @@ export default function MissionVision() {
           </div>
 
           {/* Right Section */}
-          <div className="space-y-12 py-4">
+          <div className="space-y-12">
             {/* Mission Section */}
-            <div className="space-y-4">
+            <div className="space-y-4 bg-gray-100 p-5 rounded-2xl">
               <div className="flex items-center gap-3">
                 <Target className="w-8 h-8 text-[#7C3AED]" />
                 <h3 className="text-2xl font-bold">Our Mission</h3>
@@ -61,7 +60,7 @@ export default function MissionVision() {
             </div>
 
             {/* Vision Section */}
-            <div className="space-y-4">
+            <div className="space-y-4 bg-gray-100 p-5 rounded-2xl">
               <div className="flex items-center gap-3">
                 <Mountain className="w-8 h-8 text-[#7C3AED]" />
                 <h3 className="text-2xl font-bold">Our Vision</h3>

@@ -35,12 +35,13 @@ export const teamMembers: TeamMember[] = [
 const TeamMember = () => {
   return (
     <div>
-      <section className=" w-full md:container  2xl:max-w-7xl mx-auto lg:px-8 px-4 py-16">
-        <h2 className="text-center text-4xl md:text-5xl font-bold mb-16">
-          Our <span className="italic">Dedicated</span> Team Members
+      <section className=" w-full md:container  2xl:max-w-7xl mx-auto lg:px-8 px-4 lg:py-12 2xl:py-16 ">
+        <h2 className="text-center text-2xl lg:text-4xl 2xl:text-5xl font-bold mb-16">
+          Our <span className="italic text-primary">Dedicated</span> Team
+          Members
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {teamMembers.map((member) => (
             <div
               key={member.id}
@@ -51,7 +52,7 @@ const TeamMember = () => {
                 alt={member.name}
                 width={400}
                 height={500}
-                className="w-full h-[500px] object-cover"
+                className="w-full lg:h-[460px] 2xl:h-[500px] object-cover"
               />
 
               {/* Overlay that slides up on hover */}

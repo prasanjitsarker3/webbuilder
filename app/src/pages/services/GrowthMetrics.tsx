@@ -18,15 +18,19 @@ const metrics = [
 
 export default function GrowthMetrics() {
   return (
-    <div className="container mx-auto md:px-8 px-4 py-16">
-      <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-16">
-        Together we fuel <span className="italic">Your Growth</span>
+    <div className="container mx-auto md:px-8 px-4 py-16 ">
+      <h2 className="text-center text-3xl md:text-4xl 2xl:text-5xl font-bold mb-16">
+        Together we fuel{" "}
+        <span className="italic text-primary">Your Growth</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Metrics Circles */}
         {metrics.map((metric, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center text-center bg-purple-50 rounded-3xl"
+          >
             <div className="relative mb-6">
               <div className="w-32 h-32 rounded-full border-2 border-[#7C3AED] flex items-center justify-center">
                 <div className="text-3xl font-bold">{metric.percentage}</div>
