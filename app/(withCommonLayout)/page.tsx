@@ -22,13 +22,13 @@ export default function HomePage() {
       </div>
       <ProfitMarketingPartner />
       <DigitalSolution />
-      <Portfolio/>
-      <PricingCard/>
-      <Testimonials/>
-      <TeamMember/>
-      <BlogSection/>
-      <Consultation/>
-      <FooterSection/>
+      <Portfolio />
+      <PricingCard />
+      {/* <Testimonials/> */}
+      <TeamMember />
+      <BlogSection />
+      <Consultation />
+      <FooterSection />
     </div>
   );
 }

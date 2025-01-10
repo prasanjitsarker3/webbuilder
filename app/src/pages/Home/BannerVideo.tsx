@@ -42,7 +42,7 @@ const VideoBanner = () => {
 
   return (
     <div className=" py-5">
-      <div className="relative w-[95%]  lg:w-[70%] mx-auto h-96 2xl:h-[30rem] flex justify-center items-center rounded-3xl">
+      <div className="relative w-[90%]  lg:w-[70%] mx-auto h-64 lg:h-96 2xl:h-[30rem] flex justify-center items-center rounded-3xl">
         {/* Video */}
         <video
           ref={videoRef}
@@ -63,7 +63,7 @@ const VideoBanner = () => {
             <div className=" w-16 h-16 bg-white bg-opacity-30 rounded-full flex justify-center items-center">
               <button
                 onClick={togglePlay}
-                className="flex items-center justify-center w-12 h-12 bg-white bg-opacity-45 text-primary rounded-full transition-all"
+                className="flex items-center justify-center w-12 h-12 bg-white bg-opacity-85 text-primary rounded-full transition-all"
               >
                 {isPlaying ? <Pause size={25} /> : <Play size={25} />}
               </button>

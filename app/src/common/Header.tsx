@@ -95,7 +95,7 @@ const Header = () => {
           </div>
 
           {/* Third Div */}
-          <div className="flex-1 flex items-center gap-5 justify-end md:pr-0 pr-12">
+          <div className=" hidden md:block flex-1  flex items-center gap-5 justify-end md:pr-0 pr-12">
             <button
               className={`py-2 2xl:py-3 px-6 ${
                 scrolling

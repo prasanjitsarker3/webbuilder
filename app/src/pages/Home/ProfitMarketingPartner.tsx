@@ -5,14 +5,18 @@ const ProfitMarketingPartner = () => {
   return (
     <div className=" py-16">
       <div className="bg-[#e6dcfb]">
-        <div className=" w-full container mx-auto md:px-8 px-4 py-12 2xl:py-24">
+        <div className=" w-full container mx-auto md:px-8 px-4 py-12 lg:py-16 2xl:py-24">
           <div className=" flex flex-col lg:flex-row gap-12">
-            <div className=" w-full md:w-1/2 flex flex-col justify-center">
-              <h1 className=" font-semibold text-5xl">Profit Your </h1>
-              <h1 className=" font-semibold text-5xl">Marketing Partner </h1>
-              <h1 className=" font-semibold text-5xl">
+            <div className=" w-full md:w-1/2 flex flex-col justify-center text-center md:text-start">
+              <h1 className=" font-semibold text-4xl lg:text-5xl">
+                Profit Your{" "}
+              </h1>
+              <h1 className=" font-semibold text-4xl lg:text-5xl">
+                Marketing Partner{" "}
+              </h1>
+              <h1 className=" font-semibold text-4xl lg:text-5xl">
                 for{" "}
-                <span className=" font-extrabold font-mono text-6xl">
+                <span className=" font-extrabold font-mono text-5xl lg:text-6xl text-primary">
                   Growth
                 </span>
               </h1>
@@ -25,20 +29,26 @@ const ProfitMarketingPartner = () => {
             <div className=" w-full md:w-1/2 flex justify-between items-center">
               <div className=" w-full grid grid-cols-12">
                 <div className=" col-span-4 space-y-2">
-                  <h1 className=" text-6xl font-bold text-primary">95 %</h1>
-                  <p className=" text-gray-600 font-normal text-base">
+                  <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-primary">
+                    95 %
+                  </h1>
+                  <p className=" text-gray-600 font-normal text-xs md:text-base">
                     Cleint Satisfaction
                   </p>
                 </div>
                 <div className=" col-span-4 space-y-2 text-center ">
-                  <h1 className=" text-6xl font-bold text-primary">95 %</h1>
-                  <p className=" text-gray-600 font-normal text-base">
+                  <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-primary">
+                    95 %
+                  </h1>
+                  <p className=" text-gray-600 font-normal text-xs md:text-base">
                     Cleint Satisfaction
                   </p>
                 </div>
                 <div className=" col-span-4 space-y-2 text-center ">
-                  <h1 className=" text-6xl font-bold text-primary">95 %</h1>
-                  <p className=" text-gray-600 font-normal text-base">
+                  <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-primary">
+                    95 %
+                  </h1>
+                  <p className=" text-gray-600 font-normal text-xs md:text-base">
                     Cleint Satisfaction
                   </p>
                 </div>

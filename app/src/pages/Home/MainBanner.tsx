@@ -4,7 +4,7 @@ import VideoBanner from "./BannerVideo";
 const MainBanner = () => {
   return (
     <div className="">
-      <main className=" relative h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#CAB3F6] rounded-b-[40px] ">
+      <main className=" relative h-[80vh] lg:h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#CAB3F6] rounded-b-[40px] ">
         <div className=" w-ful h-full container mx-auto my-0 md:px-8 px-4 flex flex-col justify-center  items-center ">
           <div>
             {/* Testimonial Section */}
@@ -54,7 +54,7 @@ const MainBanner = () => {
 
             {/* Hero Content */}
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-style text-2xl  md:text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="heading-style text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-6 leading-tight">
                 Ignite Your <span className="italic-text">Growth</span> with
                 <br />
                 Expert <span className="italic-text">Marketing</span> Solutions
@@ -66,8 +66,8 @@ const MainBanner = () => {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors">
+              <div className="flex gap-4 justify-center">
+                <button className=" px-6 lg:px-8 py-2 lg:py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors">
                   Get Started
                 </button>
                 <button className="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors">
@@ -75,19 +75,6 @@ const MainBanner = () => {
                 </button>
               </div>
             </div>
-
-            {/* Arrow Decoration */}
-            {/* <div className="absolute top-8 right-8">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <path
-                  d="M16 48L48 16M48 16H28M48 16V36"
-                  stroke="#7C3AED"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div> */}
           </div>
         </div>
       </main>
