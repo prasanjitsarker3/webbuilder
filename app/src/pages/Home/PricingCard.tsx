@@ -80,7 +80,7 @@ const PricingCard = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-8">
           Choose Your <span className="italic">Flexible</span> Plan
@@ -88,9 +88,7 @@ const PricingCard = () => {
 
         {/* Custom Switch */}
         <div className="flex items-center justify-center gap-3">
-          <span className="text-gray-700 flex items-center">
-            Weekly
-          </span>
+          <span className="text-gray-700 flex items-center">Weekly</span>
           <button
             onClick={() => setIsMonthly(!isMonthly)}
             className={`relative w-16 h-7 bg-gray-300 rounded-full transition ${
@@ -103,9 +101,7 @@ const PricingCard = () => {
               }`}
             />
           </button>
-          <span className="text-gray-700 flex items-center">
-            Monthly
-          </span>
+          <span className="text-gray-700 flex items-center">Monthly</span>
         </div>
       </div>
 

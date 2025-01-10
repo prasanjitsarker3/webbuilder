@@ -68,13 +68,6 @@ const VideoBanner = () => {
                 {isPlaying ? <Pause size={25} /> : <Play size={25} />}
               </button>
             </div>
-
-            {/* <button
-              onClick={togglePlay}
-              className="flex items-center justify-center w-16 h-16 2xl:w- 2xl:h-20 bg-white/20 text-primary rounded-full backdrop-blur-md hover:bg-white/40 transition-all"
-            >
-              {isPlaying ? <Pause size={25} /> : <Play size={25} />}
-            </button> */}
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export const teamMembers: TeamMember[] = [
 const TeamMember = () => {
   return (
     <div>
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section className=" w-full md:container  2xl:max-w-7xl mx-auto lg:px-8 px-4 py-16">
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-16">
           Our <span className="italic">Dedicated</span> Team Members
         </h2>
@@ -56,7 +56,7 @@ const TeamMember = () => {
 
               {/* Overlay that slides up on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#824EEB]/70 to-[#824EEB]/0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
                   <h3 className="text-2xl font-semibold py-2">{member.name}</h3>
                   <p className="text-gray-200 mb-2">{member.role}</p>
                   <div className=" flex justify-center items-center gap-2">
@@ -78,7 +78,6 @@ const TeamMember = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
                   <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
                   <p className="text-gray-200">{member.role}</p>
-                  
                 </div>
               </div>
             </div>

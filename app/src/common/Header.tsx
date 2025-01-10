@@ -69,7 +69,9 @@ const Header = () => {
               <Link href={"/"} className=" text-[#824EEB] cursor-pointer">
                 Home
               </Link>
-
+              <Link href={"/about"} className=" text-[#824EEB] cursor-pointer">
+                About Us
+              </Link>
               <Link
                 href={"/services"}
                 className=" text-[#824EEB] cursor-pointer"
@@ -77,14 +79,12 @@ const Header = () => {
                 Services
               </Link>
               <Link
-                href={"/gallery"}
+                href={"/pricing"}
                 className=" text-[#824EEB] cursor-pointer"
               >
-                Gallery
+                Pricing
               </Link>
-              <Link href={"/about"} className=" text-[#824EEB] cursor-pointer">
-                About Us
-              </Link>
+
               <Link
                 href={"/contact"}
                 className=" text-[#824EEB] cursor-pointer"
