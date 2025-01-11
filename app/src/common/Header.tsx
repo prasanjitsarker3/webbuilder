@@ -53,14 +53,15 @@ const Header = () => {
         <div className="w-full flex justify-between items-center md:px-0 px-2 text-[#824EEB] py-3">
           {/* First Div */}
           <div className="flex-1 flex justify-start items-center md:pl-0 pl-3">
-            <div className="flex items-center gap-3">
-              <Link
-                href={"/"}
-                className="text-xl md:text-3xl font-bold vigaRegular"
-              >
-                House
-              </Link>
-            </div>
+            <Link href={"/"} className="flex items-center gap-3">
+              <Image
+                src={"/1.png"}
+                alt=""
+                width={40}
+                height={40}
+                className=" "
+              />
+            </Link>
           </div>
 
           {/* Second Div */}
@@ -117,25 +118,22 @@ const Header = () => {
       {isOpen && (
         <div className="fixed top-0 h-[100vh] bg-white shadow-lg z-40 w-60 left-0 md:hidden">
           <div className="  w-full p-3 ">
-            <div className="bg-[#028355] flex justify-between items-center p-1 text-[#824EEB]">
+            <div className="flex justify-between items-center p-1 text-[#824EEB]">
               <div className="flex items-center gap-3 ">
                 <Image
-                  src={"/leaf.png"}
+                  src={"/1.png"}
                   alt=""
-                  width={60}
-                  height={60}
-                  className=" md:h-12 md:w-12 h-8 w-8 bg-[#028355]"
+                  width={40}
+                  height={40}
+                  className=" "
                 />
-                <Link
-                  href={"/"}
-                  className="text-xl md:text-3xl font-bold vigaRegular"
-                >
-                  Bloomify
-                </Link>
+                <h1 className="text-xl md:text-3xl font-bold vigaRegular">
+                  Builder
+                </h1>
               </div>
               <div
                 onClick={() => setIsOpen(false)}
-                className="bg-[#028355] text-[#824EEB] cursor-pointer"
+                className="bg-[#824EEB] text-white cursor-pointer"
               >
                 <X />
               </div>
@@ -145,28 +143,35 @@ const Header = () => {
             <Link
               href={"/"}
               onClick={() => setIsOpen(false)}
-              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-[#028355] hover:text-[#824EEB]"
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
             >
               Home
             </Link>
             <Link
-              href={`/category/${1}`}
+              href={`/about`}
               onClick={() => setIsOpen(false)}
-              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-[#028355] hover:text-[#824EEB]"
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
             >
-              Category
+              About Us
             </Link>
             <Link
-              href={"/product"}
+              href={"/services"}
               onClick={() => setIsOpen(false)}
-              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-[#028355] hover:text-[#824EEB]"
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
             >
-              Product
+              Services
             </Link>
             <Link
-              href={"/about"}
+              href={"/pricing"}
               onClick={() => setIsOpen(false)}
-              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-[#028355] hover:text-[#824EEB]"
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
+            >
+              Pricing
+            </Link>
+            <Link
+              href={"/contact"}
+              onClick={() => setIsOpen(false)}
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
             >
               Contact
             </Link>
