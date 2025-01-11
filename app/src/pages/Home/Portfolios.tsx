@@ -32,17 +32,17 @@ const Portfolio = () => {
   ];
   return (
     <div>
-      <section className="py-16 w-full container mx-auto md:px-8 px-4 ">
-        <h1 className="text-4xl 2xl:text-5xl font-bold text-center mb-8 2xl:mb-12">
+      <section className=" py-6 lg:py-12 2xl:py-16 w-full container mx-auto md:px-8 px-4">
+        <h1 className=" text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-center pb-3 md:mb-6 lg:mb-8 2xl:mb-12">
           Browse Our Portfolios{" "}
           <span className="italic text-primary">Across industries</span>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-8">
           {portfolioItems.map((item, index) => (
             <div key={index} className="group overflow-hidden rounded-[32px]">
               {/* Image Container with gradient overlay */}
-              <div className="relative aspect-[4/3] overflow-hidden  m-3 bg-gradient-to-b from-purple-50 to-purple-100 rounded-xl">
+              <div className="relative aspect-[3/2] lg:aspect-[4/3] overflow-hidden  m-3 bg-gradient-to-b from-purple-50 to-purple-100 rounded-xl">
                 <img
                   src={item.image}
                   alt={item.title}

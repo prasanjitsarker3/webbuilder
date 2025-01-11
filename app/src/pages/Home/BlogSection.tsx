@@ -38,12 +38,12 @@ export const blogPosts: BlogPost[] = [
 
 export default function BlogSection() {
   return (
-    <section className=" w-full container mx-auto md:px-8 px-4 py-16">
-      <h2 className="text-center text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-16">
+    <section className=" w-full container mx-auto md:px-8 px-4 py-6 md:py-8 lg:py-12 2xl:py-16">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-6 md:pb-8 lg:pb-12 2xl:mb-16">
         Latest from <span className="italic text-primary">Our Blog</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 2xl:gap-20 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 2xl:gap-20 mb-12 px-6 md:px-0">
         {blogPosts.map((post) => (
           <article
             key={post.id}
@@ -57,14 +57,14 @@ export default function BlogSection() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6">
+            <div className=" px-6 py-4   md:p-6">
               <time className="text-[#8257E9] text-sm font-medium">
                 {post.date}
               </time>
-              <h3 className="mt-2 text-xl font-semibold leading-tight group-hover:text-[#8257E9] transition-colors duration-300">
+              <h3 className="mt-2 text-lg lg:text-xl font-semibold leading-tight group-hover:text-[#8257E9] transition-colors duration-300">
                 {post.title}
               </h3>
-              <div className="mt-4 inline-block">
+              <div className=" mt-2 md:mt-4 inline-block">
                 <span className="text-gray-900 font-medium border-b-2 border-gray-900 group-hover:border-[#8257E9] group-hover:text-[#8257E9] transition-colors duration-300">
                   Read More
                 </span>

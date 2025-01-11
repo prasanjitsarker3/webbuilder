@@ -80,9 +80,9 @@ const PricingCard = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto pb-16">
-      <div className="text-center mb-12">
-        <h1 className=" text-3xl md:text-4xl 2xl:text-5xl font-bold mb-8">
+    <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto pb-8 md:pb-10 lg:pb-16">
+      <div className="text-center mb-6 lg:mb-8 2xl:mb-12">
+        <h1 className=" text-2xl md:text-4xl 2xl:text-5xl font-bold mb-3 md:mb-5 lg:mb-8">
           Choose Your <span className="italic text-primary ">Flexible</span>{" "}
           Plan
         </h1>
@@ -119,9 +119,9 @@ const PricingCard = () => {
                 plan.isPopular ? "bg-purple-600 text-white" : "bg-white"
               }`}
             >
-              <div className=" p-5 2xl:p-6">
+              <div className=" p-4 lg:p-5 2xl:p-6">
                 <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 2xl:mb-6 ${
+                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 md:mb-4 2xl:mb-6 ${
                     plan.isPopular ? "bg-white/20" : "bg-purple-100"
                   }`}
                 >
@@ -132,17 +132,17 @@ const PricingCard = () => {
                   />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                <h3 className=" text-xl md:text-2xl font-bold mb-2">{plan.name}</h3>
                 <p
-                  className={` mb-4 2xl:mb-6 ${
+                  className={` text-sm md:text-base mb-3 lg:mb-4 2xl:mb-6 ${
                     plan.isPopular ? "text-white/90" : "text-gray-600"
                   }`}
                 >
                   {plan.description}
                 </p>
 
-                <div className=" mb-4 2xl:mb-6">
-                  <span className="text-5xl font-bold">${price}</span>
+                <div className=" mb-3 md:mb-4 2xl:mb-6">
+                  <span className="text-3xl lg:text-5xl font-bold">${price}</span>
                   <span
                     className={`ml-2 ${
                       plan.isPopular ? "text-white/90" : "text-gray-600"
@@ -152,9 +152,9 @@ const PricingCard = () => {
                   </span>
                 </div>
 
-                <ul className=" space-y-2 2xl:space-y-4 mb-4 2xl:mb-8">
+                <ul className=" space-y-1 md:space-y-2 2xl:space-y-4 mb-4 2xl:mb-8">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-3">
+                    <li key={index} className="flex items-start gap-3 text-sm md:text-base">
                       <Check
                         className={`w-5 h-5 mt-0.5 ${
                           plan.isPopular ? "text-white" : "text-purple-600"
@@ -166,7 +166,7 @@ const PricingCard = () => {
                 </ul>
 
                 <button
-                  className={`w-full py-3 text-lg rounded-full ${
+                  className={`w-full py-2 md:py-2.5 2xl:py-3 text-base md:text-lg rounded-full ${
                     plan.isPopular
                       ? "bg-white text-purple-600 hover:bg-white/90"
                       : "bg-white border-2 border-gray-200 text-gray-800 hover:bg-gray-50"

@@ -65,25 +65,17 @@ const DigitalSolution = () => {
 
   return (
     <div className="w-full container mx-auto md:px-8 px-4 pt-4 pb-8 lg:pb-16 lg:pt-6">
-      <h1 className=" text-3xl lg:text-4xl 2xl:text-5xl font-bold text-center pb-12 2xl:pb-16">
+      <h1 className=" text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center pb-6 lg:pb-12 2xl:pb-16">
         All Round <span className="italic text-primary">Digital Solution</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 2xl:gap-12 ">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 2xl:gap-12 ">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
             <div
               key={index}
-              className={`relative group overflow-hidden p-6 rounded-[32px] ${service.bgColor} transition-all duration-300 ease-in-out hover:bg-primary hover:text-white`}
+              className={`relative group overflow-hidden p-3 lg:p-6 rounded-[32px] ${service.bgColor} transition-all duration-300 ease-in-out hover:bg-primary hover:text-white`}
             >
-              {/* Background Notch */}
-              {/* <div
-                className="absolute top-0 right-0 w-32 h-8 bg-white"
-                style={{
-                  borderBottomLeftRadius: "40px",
-                }}
-              ></div> */}
-
               {/* Content */}
               <div className="relative z-10">
                 {/* Icon */}
@@ -97,11 +89,11 @@ const DigitalSolution = () => {
 
                 {/* Text Content */}
                 <div className=" space-y-2 lg:space-y-3 2xl:space-y-4">
-                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-300">
+                  <h3 className=" text-base lg:text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-300">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-relaxed group-hover:text-white transition-colors duration-300">
+                  <p className=" text-xs md:text-base text-gray-600 leading-relaxed group-hover:text-white transition-colors duration-300">
                     {service.description}
                   </p>
                 </div>

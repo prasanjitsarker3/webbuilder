@@ -64,14 +64,14 @@ export default function Testimonials() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className=" w-full container mx-auto md:px-8 px-4 py-16">
-      <h2 className="text-center text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-16">
+    <div className=" w-full container mx-auto md:px-8 px-4 py-4 md:py-12 2xl:py-16 ">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-6 lg:mb-12 2x:mb-16">
         Hear from Our <span className="italic text-primary">Satisfied</span>{" "}
         Clients
       </h2>
 
-      <div className="grid grid-cols-12 items-center justify-center gap-8  ">
-        <div className=" col-span-12 lg:col-span-5 relative h-[26rem] 2xl:h-[32rem] w-[22rem] 2xl:w-[26rem]">
+      <div className="grid grid-cols-12 items-center justify-center gap-0 md:gap-8  ">
+        <div className=" col-span-12 lg:col-span-5 relative h-[20rem] md:h-[26rem] 2xl:h-[32rem] w-[18rem] md:w-[22rem] 2xl:w-[26rem] mx-auto">
           <Image
             src={currentTestimonial.image}
             alt={currentTestimonial.name}
@@ -88,7 +88,7 @@ export default function Testimonials() {
                 />
               ))}
             </div>
-            <h3 className="font-semibold text-lg text-center">
+            <h3 className="font-semibold text-base md:text-lg text-center">
               {currentTestimonial.name}
             </h3>
             <p className="text-sm opacity-90 text-center">
@@ -98,16 +98,16 @@ export default function Testimonials() {
         </div>
 
         <div className=" col-span-12 lg:col-span-6 relative">
-          <div className="text-6xl text-[#8257E9] font-serif absolute top-0 lg:-top-8 left-0">
+          <div className=" hidden md:block ext-6xl text-[#8257E9] font-serif absolute top-0 lg:-top-8 left-0">
             <Image
               src={"/testiic.svg"}
               alt="logo"
               width={60}
               height={60}
-              className=" h-12 w-12"
+              className=" h-6 w-6 md:h-12 md:w-12"
             />
           </div>
-          <blockquote className="text-xl md:text-3xl 2xl:text-4xl italic text-gray-700 mb-8 relative z-10 pt-14 lg:pt-8">
+          <blockquote className="text-lg md:text-3xl 2xl:text-4xl italic text-gray-700 mb-8 relative z-10 pt-14 lg:pt-8">
             " {currentTestimonial.quote} "
           </blockquote>
           <div className="flex gap-4">

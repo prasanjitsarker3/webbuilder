@@ -67,10 +67,10 @@ const MainBanner = () => {
 
               {/* CTA Buttons */}
               <div className="flex gap-4 justify-center">
-                <button className=" px-6 lg:px-8 py-2 lg:py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors">
+                <button className=" px-4 lg:px-8 py-2 lg:py-3 bg-purple-600 text-white rounded-full text-sm lg:text-base font-normal lg:font-semibold hover:bg-purple-700 transition-colors">
                   Get Started
                 </button>
-                <button className="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors">
+                <button className="px-4 lg:px-8  py-2 lg:py-3 border-2 border-purple-600 text-purple-600 rounded-full text-sm  lg:text-base font-normal lg:font-semibold hover:bg-purple-50 transition-colors">
                   View Service
                 </button>
               </div>
