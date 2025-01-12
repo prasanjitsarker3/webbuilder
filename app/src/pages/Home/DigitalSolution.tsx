@@ -74,7 +74,7 @@ const DigitalSolution = () => {
           return (
             <div
               key={index}
-              className={`relative group overflow-hidden p-3 lg:p-6 rounded-[32px] ${service.bgColor} transition-all duration-300 ease-in-out hover:bg-primary hover:text-white`}
+              className={`relative group overflow-hidden p-3 lg:p-6 rounded-lg md:rounded-[32px] ${service.bgColor} transition-all duration-300 ease-in-out hover:bg-primary hover:text-white`}
             >
               {/* Content */}
               <div className="relative z-10">

@@ -41,7 +41,7 @@ const AboutMainBanner = () => {
 
   return (
     <div>
-      <section className="min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
+      <section className=" min-h-[400px] md:min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
@@ -61,7 +61,7 @@ const AboutMainBanner = () => {
         {/* Decorative gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-purple-200/50 to-transparent pointer-events-none" />
       </section>
-      <section className=" w-full container  mx-auto md:px-8 px-4 py-16 sm:py-24">
+      <section className=" w-full container  mx-auto md:px-8 px-4 py-6 lg:py-16 sm:py-24">
         {/* Image Grid */}
         <div className="grid grid-cols-2 md:grid-cols-12 gap-4 mb-16">
           <div className="md:col-span-3">
@@ -111,7 +111,7 @@ const AboutMainBanner = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={index} className="space-y-2">
               <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#8257E9]">

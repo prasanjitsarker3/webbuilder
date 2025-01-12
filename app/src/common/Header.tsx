@@ -50,9 +50,9 @@ const Header = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="w-full container mx-auto md:px-8 px-4">
-        <div className="w-full flex justify-between items-center md:px-0 px-2 text-[#824EEB] py-3">
+        <div className="w-full flex justify-between items-center text-[#824EEB] py-3">
           {/* First Div */}
-          <div className="flex-1 flex justify-start items-center md:pl-0 pl-3">
+          <div className="flex-1 flex justify-start items-center">
             <Link href={"/"} className="flex items-center gap-3">
               <Image
                 src={"/1.png"}
@@ -116,7 +116,7 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="fixed top-0 h-[100vh] bg-white shadow-lg z-40 w-60 left-0 md:hidden">
+        <div className="fixed top-0 h-[100vh] bg-white shadow-lg z-40 w-full left-0 md:hidden">
           <div className="  w-full p-3 ">
             <div className="flex justify-between items-center p-1 text-[#824EEB]">
               <div className="flex items-center gap-3 ">

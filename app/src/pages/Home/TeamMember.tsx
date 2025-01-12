@@ -35,7 +35,7 @@ export const teamMembers: TeamMember[] = [
 const TeamMember = () => {
   return (
     <div>
-      <section className=" w-full md:container  2xl:max-w-7xl mx-auto lg:px-8 px-4 lg:py-12 2xl:py-16">
+      <section className=" w-full md:container  2xl:max-w-7xl mx-auto lg:px-8 pb-6 px-4 lg:py-12 2xl:py-16">
         <h2 className="text-center text-2xl lg:text-4xl 2xl:text-5xl font-bold pb-6 md:pb-12 2xl:mb-16">
           Our <span className="italic text-primary">Dedicated</span> Team
           Members

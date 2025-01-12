@@ -18,15 +18,15 @@ const ContactPage = () => {
   };
   return (
     <div>
-      <section className="min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
+      <section className=" min-h-[400px] md:min-h-[450px] w-full relative overflow-hidden bg-gradient-to-b from-white  to-[#B595F3] rounded-b-[40px] flex justify-center items-center">
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
-              Driving <span className="italic">Success</span> Together with{" "}
-              <span className="italic">Innovation</span>
+              Driving <span className="italic text-primary">Success</span> Together with{" "}
+              <span className="italic text-primary">Innovation</span>
             </h1>
 
-            <p className="text-base lg:text-lg 2xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-lg 2xl:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
               We integrate creativity, strategic thinking, and innovative
               technology to help businesses unlock their full potential, adapt
               to changing
@@ -37,10 +37,10 @@ const ContactPage = () => {
         {/* Decorative gradient overlay */}
       </section>
 
-      <div className="container mx-auto md:px-8 px-4 py-16">
+      <div className="container mx-auto md:px-8 px-4 py-6 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className=" space-y-4 md:space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl md:text-4xl font-bold">
                 We're Here To <span className="italic text-primary">Help</span>
@@ -88,8 +88,8 @@ const ContactPage = () => {
           </div>
 
           {/* Right Form */}
-          <div className=" border rounded-3xl p-8">
-            <div className="space-y-6">
+          <div className=" border rounded-3xl p-6 md:p-8">
+            <div className=" space-y-3 md:space-y-6">
               <div className="space-y-1">
                 <h2 className="text-2xl font-semibold">
                   We'd love to hear from you!
@@ -179,7 +179,7 @@ const ContactPage = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#7C3AED] text-white py-4 rounded-full hover:bg-[#6D28D9] transition-colors duration-200 font-medium"
+                  className="w-full bg-[#7C3AED] text-white py-3 md:py-4 rounded-full hover:bg-[#6D28D9] transition-colors duration-200 font-medium"
                 >
                   Send Message
                 </button>

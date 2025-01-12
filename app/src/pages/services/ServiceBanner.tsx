@@ -6,13 +6,13 @@ import React from "react";
 const ServiceBanner = () => {
   return (
     <div>
-      <div className="container mx-auto md:px-8 px-4  pt-28">
+      <div className="container mx-auto md:px-8 px-4 pt-20  md:pt-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Left Content */}
           <div>
             <div className=" relative  bg-gradient-to-br from-[#7C3AED] to-[#9F67FF] rounded-3xl flex flex-col justify-center">
               <div className="space-y-6 p-8 md:p-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white space-y-2">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white space-y-2">
                   <div>Innovative</div>
                   <div className="italic">Marketing</div>
                   <div className="italic">Solutions</div>

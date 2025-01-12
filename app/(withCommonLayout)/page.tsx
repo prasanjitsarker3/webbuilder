@@ -26,7 +26,7 @@ export default function HomePage() {
       <PricingCard />
       <Testimonials />
       <TeamMember />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Consultation />
       <FooterSection />
     </div>

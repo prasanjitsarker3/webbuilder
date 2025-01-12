@@ -4,12 +4,12 @@ import Link from "next/link";
 const OurJourney = () => {
   return (
     <div>
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto md:px-8 px0  py-6 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
           {/* Left Content */}
-          <div className="space-y-6 relative">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Our <span className="italic text-primary">Journey</span>
+          <div className="space-y-6 relative md:px-0 px-4 ">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-start">
+              Our <span className="italic text-primary ">Journey</span>
             </h2>
             <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xl">
               We started as a small, passionate team of marketers and
@@ -21,13 +21,13 @@ const OurJourney = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/get-started"
-                className="inline-flex items-center justify-center bg-[#7C3AED] text-white px-6 py-3 rounded-full hover:bg-[#6D28D9] transition-colors duration-200"
+                className="inline-flex items-center justify-center bg-[#7C3AED] text-white px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-[#6D28D9] transition-colors duration-200"
               >
                 Get Started
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-gray-900 hover:bg-gray-100 transition-colors duration-200"
+                className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-gray-900 hover:bg-gray-100 transition-colors duration-200"
               >
                 View Our Portfolio
               </Link>

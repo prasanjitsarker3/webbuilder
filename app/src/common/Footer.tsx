@@ -14,17 +14,18 @@ const FooterSection = () => {
     <div className="">
       <footer className="bg-[#1C1F26] text-white pt-10 lg:pt-14 2xl:pt-20 pb-6">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-12 gap-8 lg:gap-12 mb-12">
+          <div className="grid grid-cols-12 gap-4 md:gap-8 lg:gap-12 mb-12">
             {/* Company Info */}
             <div className=" col-span-12 lg:col-span-3 space-y-4">
-              <Link href="/" className="inline-block">
+              <Link href="/" className="inline-block flex items-center gap-2">
                 <Image
-                  src="/placeholder.svg?height=40&width=160"
+                  src={"/1.png"}
                   alt="Monks Marketing"
                   width={160}
                   height={40}
                   className="h-10 w-auto"
                 />
+                <h1 className=" text-2xl font-bold">Builder</h1>
               </Link>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Our agency provides a wide range of marketing services,
@@ -55,8 +56,8 @@ const FooterSection = () => {
             {/* Explore Links */}
             <div className=" col-span-12 lg:col-span-6 grid grid-cols-2">
               <div>
-                <h3 className="text-lg font-semibold mb-4">Explore</h3>
-                <ul className="space-y-2">
+                <h3 className="text-lg font-semibold mb-2 md:mb-4">Explore</h3>
+                <ul className=" space-y-1 md:space-y-2">
                   <li>
                     <Link
                       href="/about"
@@ -94,8 +95,8 @@ const FooterSection = () => {
 
               {/* Support Links */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Support</h3>
-                <ul className="space-y-2">
+                <h3 className="text-lg font-semibold mb-2 md:mb-4">Support</h3>
+                <ul className=" space-y-1 md:space-y-2">
                   <li>
                     <Link
                       href="/contact"
@@ -134,11 +135,11 @@ const FooterSection = () => {
 
             {/* Contact Info */}
             <div className=" col-span-12 lg:col-span-3">
-              <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-              <ul className="space-y-3">
+              <h3 className="text-lg font-semibold mb-2 md:mb-4">Get in Touch</h3>
+              <ul className=" space-y-1 md:space-y-3">
                 <li className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <span>17700 Avalon BLVD Carson California, USA</span>
+                  <span>Mirpur-12, Dhaka-Bangladesh</span>
                 </li>
                 <li>
                   <Link
@@ -165,7 +166,7 @@ const FooterSection = () => {
           {/* Copyright */}
           <div className="pt-6 border-t border-gray-800">
             <p className="text-center text-gray-400 text-sm">
-              2024 © Design Monks. All rights reserved
+              2025 © Design Wevloper. All rights reserved
             </p>
           </div>
         </div>
