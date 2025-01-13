@@ -4,11 +4,11 @@ import VideoBanner from "./BannerVideo";
 const MainBanner = () => {
   return (
     <div className="">
-      <main className=" relative h-[80vh] lg:h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#CAB3F6] rounded-b-[40px] ">
+      <main className=" relative h-[80vh] lg:h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#824EEB] rounded-b-[40px] ">
         <div className=" w-ful h-full container mx-auto my-0 md:px-8 px-4 flex flex-col justify-center  items-center ">
           <div>
             {/* Testimonial Section */}
-            <div className="flex justify-center mb-6 relative">
+            <div className="flex justify-center mb-6">
               <div className="flex items-center gap-1">
                 {/* Profile Images */}
                 <div className="flex -space-x-3">
@@ -40,29 +40,21 @@ const MainBanner = () => {
                   </span>
                 </div>
               </div>
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 -left-8">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 3L14.5 8.5L20 11L14.5 13.5L12 19L9.5 13.5L4 11L9.5 8.5L12 3Z"
-                    fill="#7C3AED"
-                    stroke="#7C3AED"
-                  />
-                </svg>
-              </div>
             </div>
 
             {/* Hero Content */}
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="heading-style text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-6 leading-tight">
-                Ignite Your <span className="italic-text">Growth</span> with
+                Empowering <span className="italic-text">Visionaries</span> to
                 <br />
-                Expert <span className="italic-text">Marketing</span> Solutions
+                Conquer the Solutions{" "}
+                <span className="italic-text">Digital World.</span>{" "}
               </h1>
-              <p className="text-gray-700 text-base md:text-lg 2xl:text-xl mb-8 max-w-3xl mx-auto">
-                Break through barriers and reach new heights with our dynamic
-                marketing strategies. Let's turn your growth potential into
-                real, measurable success
+              <p className="text-gray-800 text-base md:text-lg 2xl:text-xl mb-8 max-w-3xl mx-auto">
+                You get expert support to transform your vision into a stunning,
+                professional website. Our tailored solutions help you establish
+                a strong online presence, attract more customers, and grow your
+                business seamlessly.
               </p>
 
               {/* CTA Buttons */}
@@ -70,7 +62,7 @@ const MainBanner = () => {
                 <button className=" px-4 lg:px-8 py-2 lg:py-3 bg-purple-600 text-white rounded-full text-sm lg:text-base font-normal lg:font-semibold hover:bg-purple-700 transition-colors">
                   Get Started
                 </button>
-                <button className="px-4 lg:px-8  py-2 lg:py-3 border-2 border-purple-600 text-purple-600 rounded-full text-sm  lg:text-base font-normal lg:font-semibold hover:bg-purple-50 transition-colors">
+                <button className="px-4 lg:px-8  py-2 lg:py-3 border-2 border-white text-white rounded-full text-sm  lg:text-base font-normal lg:font-semibold hover:bg-primary hover:text-white hover:border-primary transition-colors">
                   View Service
                 </button>
               </div>

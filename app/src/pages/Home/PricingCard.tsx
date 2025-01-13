@@ -83,8 +83,7 @@ const PricingCard = () => {
     <section className=" w-full 2xl:max-w-7xl container px-4 md:px-8  mx-auto pb-8 md:pb-10 lg:pb-16">
       <div className="text-center mb-6 lg:mb-8 2xl:mb-12">
         <h1 className=" text-2xl md:text-4xl 2xl:text-5xl font-bold mb-3 md:mb-5 lg:mb-8">
-          Choose Your <span className="italic text-primary ">Flexible</span>{" "}
-          Plan
+          Pick the <span className=" text-primary ">Perfect</span> Plan
         </h1>
 
         {/* Custom Switch */}
@@ -132,7 +131,9 @@ const PricingCard = () => {
                   />
                 </div>
 
-                <h3 className=" text-xl md:text-2xl font-bold mb-2">{plan.name}</h3>
+                <h3 className=" text-xl md:text-2xl font-bold mb-2">
+                  {plan.name}
+                </h3>
                 <p
                   className={` text-sm md:text-base mb-3 lg:mb-4 2xl:mb-6 ${
                     plan.isPopular ? "text-white/90" : "text-gray-600"
@@ -142,7 +143,9 @@ const PricingCard = () => {
                 </p>
 
                 <div className=" mb-3 md:mb-4 2xl:mb-6">
-                  <span className="text-3xl lg:text-5xl font-bold">${price}</span>
+                  <span className="text-3xl lg:text-5xl font-bold">
+                    ${price}
+                  </span>
                   <span
                     className={`ml-2 ${
                       plan.isPopular ? "text-white/90" : "text-gray-600"
@@ -154,7 +157,10 @@ const PricingCard = () => {
 
                 <ul className=" space-y-1 md:space-y-2 2xl:space-y-4 mb-4 2xl:mb-8">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-3 text-sm md:text-base">
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 text-sm md:text-base"
+                    >
                       <Check
                         className={`w-5 h-5 mt-0.5 ${
                           plan.isPopular ? "text-white" : "text-purple-600"

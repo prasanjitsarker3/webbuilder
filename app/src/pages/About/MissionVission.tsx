@@ -11,17 +11,17 @@ export default function MissionVision() {
           <div className="bg-[#7C3AED] rounded-3xl p-8 md:p-12 flex flex-col justify-between">
             <div className=" space-y-2 md:space-y-4 lg:space-y-6">
               <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold">
-                What We <span className="italic">Stand</span> For:
+                What We <span className="">Stand</span> For:
                 <br />
-                Our <span className="italic">Commitment</span> to
+                Our <span className="">Commitment</span> to
                 <br />
                 Excellence
               </h2>
               <p className="text-white/90 text-sm md:text-lg leading-relaxed">
-                A Commitment to Creativity, Strategy, and Sustainable Success.
-                We strive to transform businesses with innovative marketing
-                solutions that drive growth, inspire engagement, and foster
-                long-term success in a constantly evolving digital landscape
+                A Commitment to Creativity, Strategy, and Digital Excellence. At
+                WebBuilder by Wevloper, we strive to transform businesses with
+                custom website solutions that drive growth, enhance engagement,
+                and ensure long-term success in an ever-evolving online world.
               </p>
             </div>
             <Link

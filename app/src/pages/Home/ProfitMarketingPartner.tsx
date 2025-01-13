@@ -9,21 +9,22 @@ const ProfitMarketingPartner = () => {
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-12">
             <div className=" w-full md:w-1/2 flex flex-col justify-center text-center md:text-start">
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                Profit Your{" "}
+                Empowering Your Brand’s
               </h1>
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                Marketing Partner{" "}
+                Online Success with
               </h1>
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                for{" "}
+                Professional
                 <span className=" font-extrabold font-mono text-4xl lg:text-5xl 2xl:text-6xl text-primary">
-                  Growth
+                  Websites.
                 </span>
               </h1>
+
               <p className=" text-base text-gray-600 pt-2 lg:pt-4">
-                With over a decade of experience, we specialize in delivering
-                results-driven marketing strategies that empower businesses to
-                thrive
+                Since 2023, we have specialized in crafting tailored websites
+                that empower businesses to establish a strong online presence
+                and thrive in the digital world.
               </p>
             </div>
             <div className=" w-full md:w-1/2 flex justify-between items-center">

@@ -45,15 +45,15 @@ const AboutMainBanner = () => {
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
-              Driving <span className="italic text-primary">Success</span>{" "}
-              Together with{" "}
-              <span className="italic text-primary">Innovation</span>
+              Building Success <span className="text-primary">Together </span>{" "}
+              with Modern Website
+              <span className="text-primary">Solutions.</span>
             </h1>
 
             <p className="text-base lg:text-lg 2xl:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
-              We integrate creativity, strategic thinking, and innovative
-              technology to help businesses unlock their full potential, adapt
-              to changing
+              We combine creativity, strategic planning, and modern technology
+              to build websites that help your business grow and adapt to a
+              changing world.
             </p>
           </div>
         </div>

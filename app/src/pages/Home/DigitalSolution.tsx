@@ -1,62 +1,74 @@
-import { BarChart, Edit, Globe, Mail, RefreshCw, Search } from "lucide-react";
+import {
+  BarChart,
+  ChartGantt,
+  CodeXml,
+  Cpu,
+  Edit,
+  Figma,
+  Globe,
+  Mail,
+  RefreshCw,
+  Search,
+  Settings,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const DigitalSolution = () => {
   const services = [
     {
-      icon: RefreshCw,
-      title: "Keyword Research",
+      icon: ChartGantt,
+      title: "Planning & Strategy",
       description:
-        "Identify and use relevant keywords that your target audience is searching for. Regularly update to stay ahead.",
+        "We turn your vision into a plan with smart strategies, SEO integration, and site architecture for a results-driven website.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
     {
-      icon: Search,
-      title: "On-Page SEO",
+      icon: Figma,
+      title: "Design Services",
       description:
-        "Optimize content for search engines by including keywords in titles, headers, and meta descriptions.",
+        "Your brand deserves to shine! We create stunning, responsive designs that engage users and deliver seamless experiences across all devices.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
     {
-      icon: Mail,
-      title: "Email Marketing",
+      icon: CodeXml,
+      title: "Development Services",
       description:
-        "Distribute content through email newsletters to keep your subscribers informed and engaged.",
+        "We build all types of websites - business, eCommerce, blogs, news portals, personal portfolios, landing pages, directories, forums, booking systems, educational platforms, and more.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
     {
-      title: "Analytics Tracking",
+      title: "Testing & Quality Assurance",
       description:
-        "Use these insights to refine strategies and enhance overall effectiveness.",
-      icon: BarChart, // Replace with the actual icon from Lucide
+        "No glitches, no worries! We test every detail to ensure your site is fast, secure, and flawless on all browsers and devices.",
+      icon: BarChart,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
     {
-      title: "Quality Writing",
+      title: "Deployment & Hosting",
       description:
-        "Craft engaging and informative content that provides value. Compelling clear structure.",
-      icon: Edit,
+        "We handle everything from domain to hosting, ensuring your website launches smoothly and performs at lightning speed worldwide.",
+      icon: Cpu,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
     },
     {
-      title: "Digital Marketing",
+      title: "Maintenance & Support",
       description:
-        "Develop and execute targeted digital campaigns across various channels such as social media.",
-      icon: Globe,
+        "Focus on your business while we keep your site updated, secure, and back up with ongoing care and 24/7 support.",
+      icon: Settings,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
       iconColor: "text-[#7B61FF]",
@@ -66,7 +78,8 @@ const DigitalSolution = () => {
   return (
     <div className="w-full container mx-auto md:px-8 px-4 pt-4 pb-8 lg:pb-16 lg:pt-6">
       <h1 className=" text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center pb-6 lg:pb-12 2xl:pb-16">
-        All Round <span className="italic text-primary">Digital Solution</span>
+        Complete Technical
+        <span className="text-primary"> Solution</span>
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 2xl:gap-12 ">
         {services.map((service, index) => {
@@ -89,7 +102,7 @@ const DigitalSolution = () => {
 
                 {/* Text Content */}
                 <div className=" space-y-2 lg:space-y-3 2xl:space-y-4">
-                  <h3 className=" text-base lg:text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-300">
+                  <h3 className=" text-sm md:text-base lg:text-lg font-semibold text-gray-900 group-hover:text-white transition-colors duration-300">
                     {service.title}
                   </h3>
 

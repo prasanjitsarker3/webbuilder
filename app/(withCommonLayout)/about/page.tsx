@@ -15,7 +15,7 @@ const AboutPage = () => {
       <FoundationalValues />
       <FAQ />
       <Consultation />
-      <FooterSection/>
+      <FooterSection />
     </div>
   );
 };

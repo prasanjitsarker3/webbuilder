@@ -16,28 +16,68 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Alex Johnson",
-    role: "Marketing Director",
+    name: "Shoran A Rohimn",
+    role: "Corporate Fashion BD",
     quote:
-      "Ignite Visibility's detailed-oriented efforts have produced results, including significant increases in both organic rankings and leads. Professional, committed, and experienced, the team executes efficient.",
+      "Wevloper did a great job on our website. They used our designs and made the site look good on all screen sizes, keeping it simple and easy to use even with lots of data. Highly recommended and would work with them again.",
     rating: 5,
     image:
       "https://media.istockphoto.com/id/997773960/photo/handsome-young-businessman.jpg?s=612x612&w=0&k=20&c=ltWzrGrzERzUjbtkAm1zCPO7ri_M3AICgsq9eWard_I=",
   },
   {
     id: 2,
-    name: "Sarah Miller",
-    role: "CEO",
+    name: "Tahmid Hasan",
+    role: "JSB Engineering Co.",
     quote:
-      "The team's innovative approach and dedication to excellence have transformed our digital presence. Their strategic insights and consistent delivery of results have made them an invaluable partner experienced.",
+      "I am absolutely impressed with Wevloper's designs and wish we had found them sooner. Their designs are incredible, and their willingness to make revisions even when it's not their fault stands out.",
     rating: 5,
     image:
       "https://media.istockphoto.com/id/175358980/photo/confident-executive-posing.jpg?s=612x612&w=0&k=20&c=fhxBfpqZtRUgp7EJK4NWtvZJqu2NkG09heLulS3gZBU=",
   },
   {
     id: 3,
-    name: "David Chen",
-    role: "Operations Manager",
+    name: "Imrul Kayes",
+    role: "Top Mark Internationa",
+    quote:
+      "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
+    rating: 5,
+    image:
+      "https://media.istockphoto.com/id/1320492251/photo/low-key-portrait-of-handsome-indian-young-businessman-looking-at-the-camera-low-key-side-view.jpg?s=612x612&w=0&k=20&c=X7n4Epc5bRq8B9tWaJU3tiucAVzaas1g3eVtqbn7oSg=",
+  },
+  {
+    id: 4,
+    name: "Foysal Bin Ekram",
+    role: "Foysal Tred International",
+    quote:
+      "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
+    rating: 5,
+    image:
+      "https://media.istockphoto.com/id/1320492251/photo/low-key-portrait-of-handsome-indian-young-businessman-looking-at-the-camera-low-key-side-view.jpg?s=612x612&w=0&k=20&c=X7n4Epc5bRq8B9tWaJU3tiucAVzaas1g3eVtqbn7oSg=",
+  },
+  {
+    id: 5,
+    name: "Foysal Bin Ekram",
+    role: "Foysal Tred International",
+    quote:
+      "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
+    rating: 5,
+    image:
+      "https://media.istockphoto.com/id/1320492251/photo/low-key-portrait-of-handsome-indian-young-businessman-looking-at-the-camera-low-key-side-view.jpg?s=612x612&w=0&k=20&c=X7n4Epc5bRq8B9tWaJU3tiucAVzaas1g3eVtqbn7oSg=",
+  },
+  {
+    id: 6,
+    name: "Foysal Bin Ekram",
+    role: "Foysal Tred International",
+    quote:
+      "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
+    rating: 5,
+    image:
+      "https://media.istockphoto.com/id/1320492251/photo/low-key-portrait-of-handsome-indian-young-businessman-looking-at-the-camera-low-key-side-view.jpg?s=612x612&w=0&k=20&c=X7n4Epc5bRq8B9tWaJU3tiucAVzaas1g3eVtqbn7oSg=",
+  },
+  {
+    id: 7,
+    name: "Imrul Kayes",
+    role: "Top Mark Internationa",
     quote:
       "Working with this team has been a game-changer for our business. Their attention to detail and proactive communication have made complex projects feel seamless and achievable proactive communication have",
     rating: 5,
@@ -47,18 +87,10 @@ export const testimonials: Testimonial[] = [
 ];
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(3);
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
   };
 
   const currentTestimonial = testimonials[currentIndex];
@@ -66,8 +98,7 @@ export default function Testimonials() {
   return (
     <div className=" w-full container mx-auto md:px-8 px-4 py-4 md:py-12 2xl:py-16 ">
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-6 lg:mb-12 2x:mb-16">
-        Hear from Our <span className="italic text-primary">Satisfied</span>{" "}
-        Clients
+        Feedback from Our <span className="text-primary">Thrilled</span> Clients
       </h2>
 
       <div className="grid grid-cols-12 items-center justify-center gap-0 md:gap-8  ">
@@ -111,20 +142,20 @@ export default function Testimonials() {
             " {currentTestimonial.quote} "
           </blockquote>
           <div className="flex gap-4">
-            <button
-              onClick={handlePrevious}
-              className="p-4 rounded-full bg-[#8257E9] text-white hover:bg-[#724CC7] transition-colors"
-              aria-label="Previous testimonial"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="p-4 rounded-full bg-[#8257E9] text-white hover:bg-[#724CC7] transition-colors"
-              aria-label="Next testimonial"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
+            {/* Dot Create and Middle active  and clicked way change and active color  */}
+            <div className="flex mt-4 space-x-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleDotClick(index)}
+                  className={` rounded-full ${
+                    index === currentIndex
+                      ? "bg-primary h-6 w-6 -mt-1"
+                      : "bg-gray-300 h-4 w-4"
+                  }`}
+                ></button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -11,12 +11,15 @@ const OurJourney = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-start">
               Our <span className="italic text-primary ">Journey</span>
             </h2>
-            <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xl">
-              We started as a small, passionate team of marketers and
-              strategists with a shared vision—to help businesses grow in the
-              digital landscape. Over the years, we have expanded into a full-
-              service agency, driven by our commitment to delivering measurable
-              results and impactful solutions.
+            <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xl text-justify">
+              At Wevloper, we started as a small team with a big vision—to help
+              businesses thrive in the ever-evolving digital landscape. As the
+              demand for professional website development grew, we launched
+              WebBuilder by Wevloper, a dedicated service to create custom,
+              SEO-friendly, and visually stunning websites. Today, businesses
+              trust us to bring their online vision to life, combining
+              creativity, strategic planning, and cutting-edge technology to
+              help them grow, attract more customers, and succeed online.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

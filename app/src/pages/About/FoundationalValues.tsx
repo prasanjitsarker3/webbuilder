@@ -1,32 +1,32 @@
-import { User, Target, Lightbulb, Lock } from "lucide-react";
+import { User, Target, Lightbulb, Lock, Award, Users } from "lucide-react";
 
 const values = [
   {
-    icon: User,
-    title: "Customer First",
+    icon: Target,
+    title: "Approach",
     description:
-      "Optimize content for search engines by including keywords in titles.",
+      "Prioritizing client needs and delivering tailored website solutions that help them succeed.",
     bgClass: "bg-purple-50",
   },
   {
-    icon: Target,
-    title: "Precision Craft",
+    icon: Award,
+    title: "Quality Excellence",
     description:
-      "Optimize content for search engines by including keywords in titles.",
+      "Ensuring every project is high-performing, secure, and offers an exceptional user experience.",
     bgClass: "bg-purple-50",
   },
   {
     icon: Lightbulb,
     title: "Innovative Idea",
     description:
-      "Optimize content for search engines by including keywords in titles.",
+      "Embracing creativity and modern technology to craft standout, future-ready websites.",
     bgClass: "bg-purple-50",
   },
   {
-    icon: Lock,
-    title: "Protect Integrity",
+    icon: Users,
+    title: "Collaboration",
     description:
-      "Optimize content for search engines by including keywords in titles.",
+      "Fostering transparency and partnership with clients to create shared success..",
     bgClass: "bg-purple-50",
   },
 ];
@@ -39,7 +39,7 @@ export default function FoundationalValues() {
           <span className=" text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold">
             Our Foundational{" "}
           </span>
-          <span className="text-3xl lg:text-4xl 2xl:text-5xl font-bold italic text-primary">
+          <span className="text-3xl lg:text-4xl 2xl:text-5xl font-bold  text-primary">
             Values
           </span>
         </h2>
