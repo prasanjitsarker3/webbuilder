@@ -3,19 +3,19 @@ import Image from "next/image";
 const AboutMainBanner = () => {
   const stats = [
     {
-      number: "500+",
+      number: "30+",
       label: "Total Projects Completed",
     },
     {
-      number: "05+",
+      number: "03+",
       label: "Years of Experience",
     },
     {
-      number: "30+",
+      number: "15+",
       label: "Dedicated Team Member",
     },
     {
-      number: "200+",
+      number: "40+",
       label: "Satisfied happy clients",
     },
   ];

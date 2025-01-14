@@ -14,10 +14,10 @@ const ServiceBanner = () => {
               <div className="space-y-6 p-8 md:p-12">
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white space-y-2">
                   <div>Innovative</div>
-                  <div className="italic">Marketing</div>
-                  <div className="italic">Solutions</div>
+                  <div className="">Marketing</div>
+                  <div className="">Solutions</div>
                   <div>
-                    Tailored for <span className="italic">You</span>
+                    Tailored for <span className="">You</span>
                   </div>
                 </h1>
               </div>

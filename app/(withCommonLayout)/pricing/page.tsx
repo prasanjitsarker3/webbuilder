@@ -10,14 +10,13 @@ const PricingPage = () => {
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
-              Driving <span className="italic">Success</span> Together with{" "}
-              <span className="italic">Innovation</span>
+              Unlocking Business <span className=" text-primary">Success</span>{" "}
+              Through Innovation
             </h1>
 
             <p className="text-base md:text-lg 2xl:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
-              We integrate creativity, strategic thinking, and innovative
-              technology to help businesses unlock their full potential, adapt
-              to changing
+              We combine creativity, strategic thinking, and cutting-edge
+              technology to empower businesses to thrive in a dynamic market.
             </p>
           </div>
         </div>

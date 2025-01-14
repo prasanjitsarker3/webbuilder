@@ -9,7 +9,7 @@ const OurJourney = () => {
           {/* Left Content */}
           <div className="space-y-6 relative md:px-0 px-4 ">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-start">
-              Our <span className="italic text-primary ">Journey</span>
+              Our <span className="text-primary ">Journey</span>
             </h2>
             <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xl text-justify">
               At Wevloper, we started as a small team with a big vision—to help
@@ -30,7 +30,7 @@ const OurJourney = () => {
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-gray-900 hover:bg-gray-100 transition-colors duration-200"
+                className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-gray-900 hover:bg-primary hover:text-white hover:border-primary transition-colors duration-200"
               >
                 View Our Portfolio
               </Link>
@@ -45,7 +45,7 @@ const OurJourney = () => {
                 <div className="h-1/2 w-full rounded-3xl flex justify-center lg:justify-end ">
                   <Image
                     src={
-                      "https://img.freepik.com/premium-photo/three-people-sitting-table_1124848-131270.jpg?uid=R181855209&ga=GA1.1.1524916337.1735299616&semt=ais_hybrid"
+                      "https://img.freepik.com/free-photo/group-business-executives-discussing-laptop-their-des_1170-1995.jpg?t=st=1736868441~exp=1736872041~hmac=70fe8afda5398309392671ff36380127dec6c6766179767fc78a6cd8e8bb7b59&w=740"
                     }
                     alt=" "
                     width={300}
@@ -56,7 +56,7 @@ const OurJourney = () => {
                 <div className="h-1/2 rounded-3xl ">
                   <Image
                     src={
-                      "https://img.freepik.com/premium-photo/three-people-sitting-table_1124848-131270.jpg?uid=R181855209&ga=GA1.1.1524916337.1735299616&semt=ais_hybrid"
+                      "https://img.freepik.com/free-photo/no-people-call-center-helpdesk-with-multiple-monitors-office-customer-service-client-support-telecommunication-nobody-working-telemarketing-assistance-with-helpline-contact_482257-44008.jpg?t=st=1736868310~exp=1736871910~hmac=41d28620296fab5b5807fadc44e7df8369b3b510a2d7ece877a32347a3b4299b&w=740"
                     }
                     alt=" "
                     width={300}
@@ -69,7 +69,7 @@ const OurJourney = () => {
                 <div className="h-1/2 rounded-3xl">
                   <Image
                     src={
-                      "https://img.freepik.com/premium-photo/three-people-sitting-table_1124848-131270.jpg?uid=R181855209&ga=GA1.1.1524916337.1735299616&semt=ais_hybrid"
+                      "https://img.freepik.com/free-photo/group-graphic-designers-giving-high-five-each-other_1170-1096.jpg?t=st=1736868120~exp=1736871720~hmac=b3eea660069e12ed8b2b51312d3573f7c4c98d6305d220d2140cffe78ed92d8d&w=740"
                     }
                     alt=" "
                     width={300}
@@ -80,7 +80,7 @@ const OurJourney = () => {
                 <div className="h-1/2 rounded-3xl  w-full">
                   <Image
                     src={
-                      "https://img.freepik.com/premium-photo/three-people-sitting-table_1124848-131270.jpg?uid=R181855209&ga=GA1.1.1524916337.1735299616&semt=ais_hybrid"
+                      "https://img.freepik.com/premium-photo/interior-shot-office_1048944-6320935.jpg?uid=R141745868&ga=GA1.1.406508785.1728154460"
                     }
                     alt=" "
                     width={300}

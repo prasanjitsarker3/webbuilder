@@ -22,19 +22,17 @@ const ContactPage = () => {
         <div className="w-full h-full md:px-0 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-8">
-              Driving <span className="italic text-primary">Success</span> Together with{" "}
-              <span className="italic text-primary">Innovation</span>
+              Let's Connect & <span className=" text-primary">Grow</span> Your
+              Business Together
             </h1>
 
             <p className="text-base lg:text-lg 2xl:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
-              We integrate creativity, strategic thinking, and innovative
-              technology to help businesses unlock their full potential, adapt
-              to changing
+              Ready to discuss your project? Contact us today and let's explore
+              how we can help you achieve your business goals through innovative
+              solutions.
             </p>
           </div>
         </div>
-
-        {/* Decorative gradient overlay */}
       </section>
 
       <div className="container mx-auto md:px-8 px-4 py-6 lg:py-16">
@@ -43,14 +41,13 @@ const ContactPage = () => {
           <div className=" space-y-4 md:space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl md:text-4xl font-bold">
-                We're Here To <span className="italic text-primary">Help</span>
-                <br />
-                You <span className="italic text-primary">Grow</span>
+                We're Here to Help You{" "}
+                <span className=" text-primary">Grow</span> Your Business
               </h1>
               <p className="text-gray-600 max-w-md">
-                Whether you're scheduling your first consultation or a follow-up
-                strategy session, our appointments are key to building Client
-                relationships.
+                Schedule your initial consultation or a follow-up strategy
+                session. Our appointments are key to building strong client
+                relationships and understanding your unique business goals.
               </p>
             </div>
 

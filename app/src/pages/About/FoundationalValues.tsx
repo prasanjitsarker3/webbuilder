@@ -3,30 +3,27 @@ import { User, Target, Lightbulb, Lock, Award, Users } from "lucide-react";
 const values = [
   {
     icon: Target,
-    title: "Approach",
-    description:
-      "Prioritizing client needs and delivering tailored website solutions that help them succeed.",
+    title: "Client-Centric Approach",
+    description: "Tailored solutions for client success and achieving their.",
     bgClass: "bg-purple-50",
   },
   {
     icon: Award,
-    title: "Quality Excellence",
-    description:
-      "Ensuring every project is high-performing, secure, and offers an exceptional user experience.",
+    title: "Quality & Excellence",
+    description: "High-performing, secure, and user-friendly websites.",
     bgClass: "bg-purple-50",
   },
   {
     icon: Lightbulb,
-    title: "Innovative Idea",
+    title: "Innovative Solutions",
     description:
-      "Embracing creativity and modern technology to craft standout, future-ready websites.",
+      "Creative, future-ready website design with a focus on cutting.",
     bgClass: "bg-purple-50",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description:
-      "Fostering transparency and partnership with clients to create shared success..",
+    title: "Collaborative Partnerships",
+    description: "Transparent and successful client collaborations.",
     bgClass: "bg-purple-50",
   },
 ];
@@ -53,7 +50,7 @@ export default function FoundationalValues() {
               <div className="text-purple-500 mb-3  md:mb-6 group-hover:text-white">
                 <value.icon size={24} />
               </div>
-              <h3 className=" text-base md:text-xl font-bold mb-4 group-hover:text-white">
+              <h3 className=" text-base md:text-lg font-bold mb-4 group-hover:text-white text-nowrap">
                 {value.title}
               </h3>
               <p className=" text-sm md:text-base text-gray-600 group-hover:text-white">

@@ -9,14 +9,13 @@ const ProfitMarketingPartner = () => {
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-12">
             <div className=" w-full md:w-1/2 flex flex-col justify-center text-center md:text-start">
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                Empowering Your Brand’s
+                Brand Empowerment
               </h1>
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                Online Success with
+                Through Professional
               </h1>
               <h1 className=" font-semibold text-3xl lg:text-5xl">
-                Professional
-                <span className=" font-extrabold font-mono text-4xl lg:text-5xl 2xl:text-6xl text-primary">
+                <span className=" pl-1 font-extrabold font-mono text-4xl lg:text-5xl 2xl:text-6xl text-primary">
                   Websites.
                 </span>
               </h1>
@@ -34,23 +33,23 @@ const ProfitMarketingPartner = () => {
                     95 %
                   </h1>
                   <p className=" text-gray-600 font-normal text-xs md:text-base">
-                    Cleint Satisfaction
+                    Client Satisfaction
                   </p>
                 </div>
                 <div className=" col-span-4 space-y-2 text-center ">
                   <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-primary">
-                    95 %
+                    3 +
                   </h1>
                   <p className=" text-gray-600 font-normal text-xs md:text-base">
-                    Cleint Satisfaction
+                    Years of Experience
                   </p>
                 </div>
                 <div className=" col-span-4 space-y-2 text-center ">
                   <h1 className=" text-3xl md:text-4xl lg:text-6xl font-bold text-primary">
-                    95 %
+                    30+
                   </h1>
                   <p className=" text-gray-600 font-normal text-xs md:text-base">
-                    Cleint Satisfaction
+                    Projects Delivered
                   </p>
                 </div>
               </div>

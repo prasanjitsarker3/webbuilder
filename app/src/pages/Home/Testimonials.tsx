@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
       "Wevloper did a great job on our website. They used our designs and made the site look good on all screen sizes, keeping it simple and easy to use even with lots of data. Highly recommended and would work with them again.",
     rating: 5,
     image:
-      "https://media.istockphoto.com/id/997773960/photo/handsome-young-businessman.jpg?s=612x612&w=0&k=20&c=ltWzrGrzERzUjbtkAm1zCPO7ri_M3AICgsq9eWard_I=",
+      "https://img.freepik.com/premium-photo/full-length-young-man-standing-against-building_1048944-20661047.jpg?w=360",
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export default function Testimonials() {
             alt={currentTestimonial.name}
             width={300}
             height={400}
-            className="rounded-lg h-full w-full object-cover"
+            className="rounded-lg h-full w-full object-cover shadow"
           />
           <div className="absolute w-[70%] 2xl:w-[85%] left-1/2 transform -translate-x-1/2 bottom-6 bg-[#8257E9] text-white p-4 rounded-lg space-y-1">
             <div className="flex justify-center gap-1">

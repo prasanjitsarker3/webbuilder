@@ -20,7 +20,7 @@ const DigitalSolution = () => {
       icon: ChartGantt,
       title: "Planning & Strategy",
       description:
-        "We turn your vision into a plan with smart strategies, SEO integration, and site architecture for a results-driven website.",
+        "Develop winning website strategies with SEO focus and user-centered planning.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
@@ -30,7 +30,7 @@ const DigitalSolution = () => {
       icon: Figma,
       title: "Design Services",
       description:
-        "Your brand deserves to shine! We create stunning, responsive designs that engage users and deliver seamless experiences across all devices.",
+        "Create stunning, responsive designs that captivate users and enhance brand identity.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
@@ -40,7 +40,7 @@ const DigitalSolution = () => {
       icon: CodeXml,
       title: "Development Services",
       description:
-        "We build all types of websites - business, eCommerce, blogs, news portals, personal portfolios, landing pages, directories, forums, booking systems, educational platforms, and more.",
+        "Build high-quality websites tailored to your business goals and user needs.",
       link: "/search",
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
@@ -49,7 +49,7 @@ const DigitalSolution = () => {
     {
       title: "Testing & Quality Assurance",
       description:
-        "No glitches, no worries! We test every detail to ensure your site is fast, secure, and flawless on all browsers and devices.",
+        "Ensure a seamless user experience with rigorous testing and quality checks.",
       icon: BarChart,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
@@ -58,7 +58,7 @@ const DigitalSolution = () => {
     {
       title: "Deployment & Hosting",
       description:
-        "We handle everything from domain to hosting, ensuring your website launches smoothly and performs at lightning speed worldwide.",
+        "Launch your website smoothly with reliable hosting and expert deployment.",
       icon: Cpu,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",
@@ -67,7 +67,7 @@ const DigitalSolution = () => {
     {
       title: "Maintenance & Support",
       description:
-        "Focus on your business while we keep your site updated, secure, and back up with ongoing care and 24/7 support.",
+        "Receive ongoing support and maintenance to keep your website secure.",
       icon: Settings,
       bgColor: "bg-[#F7F5FF]",
       iconBg: "bg-[#F1EDFF]",

@@ -28,7 +28,7 @@ const FooterSection = () => {
                 <h1 className=" text-2xl font-bold">Builder</h1>
               </Link>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Our agency provides a wide range of marketing services,
+                Our agency provides a wide range of technology services,
                 including digital marketing, SEO, social media.
               </p>
               <div className="flex gap-3">
@@ -57,13 +57,21 @@ const FooterSection = () => {
             <div className=" col-span-12 lg:col-span-6 grid grid-cols-2">
               <div>
                 <h3 className="text-lg font-semibold mb-2 md:mb-4">Explore</h3>
-                <ul className=" space-y-1 md:space-y-2">
+                <ul className=" space-y-1 md:space-y-2 text-base">
                   <li>
                     <Link
                       href="/about"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      Services
                     </Link>
                   </li>
                   <li>
@@ -80,14 +88,6 @@ const FooterSection = () => {
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Pricing Plan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      Blog
                     </Link>
                   </li>
                 </ul>
@@ -107,10 +107,10 @@ const FooterSection = () => {
                   </li>
                   <li>
                     <Link
-                      href="/404"
+                      href="/blog"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
-                      404 Page
+                      Blog
                     </Link>
                   </li>
                   <li>
@@ -135,7 +135,9 @@ const FooterSection = () => {
 
             {/* Contact Info */}
             <div className=" col-span-12 lg:col-span-3">
-              <h3 className="text-lg font-semibold mb-2 md:mb-4">Get in Touch</h3>
+              <h3 className="text-lg font-semibold mb-2 md:mb-4">
+                Get in Touch
+              </h3>
               <ul className=" space-y-1 md:space-y-3">
                 <li className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
@@ -147,7 +149,7 @@ const FooterSection = () => {
                     className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    +1 716 503 6335
+                    +88 01308900149
                   </Link>
                 </li>
                 <li>
@@ -156,7 +158,7 @@ const FooterSection = () => {
                     className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    hello@designmonks.com
+                    info@wevloper.com
                   </Link>
                 </li>
               </ul>

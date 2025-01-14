@@ -10,6 +10,7 @@ import TeamMember from "../src/pages/Home/TeamMember";
 import BlogSection from "../src/pages/Home/BlogSection";
 import Consultation from "../src/pages/Home/Consultation";
 import FooterSection from "../src/common/Footer";
+import OurPartner from "../src/pages/Home/OurPartner";
 
 export default function HomePage() {
   return (
@@ -24,7 +25,8 @@ export default function HomePage() {
       <DigitalSolution />
       <Portfolio />
       <PricingCard />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <OurPartner />
       <TeamMember />
       {/* <BlogSection /> */}
       <Consultation />

@@ -1,10 +1,14 @@
 import { Star } from "lucide-react";
-import VideoBanner from "./BannerVideo";
 
 const MainBanner = () => {
+  const corporateData = [
+    "/Photo/Corporate1.jpg",
+    "/Photo/Corporate3.avif",
+    "/Photo/Corporate2.avif",
+  ];
   return (
     <div className="">
-      <main className=" relative h-[80vh] lg:h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#824EEB] rounded-b-[40px] ">
+      <main className=" relative h-[80vh] lg:h-[100vh] 2xl:h-[90vh] bg-gradient-to-b from-white to-[#B595F3] rounded-b-[40px] ">
         <div className=" w-ful h-full container mx-auto my-0 md:px-8 px-4 flex flex-col justify-center  items-center ">
           <div>
             {/* Testimonial Section */}
@@ -12,13 +16,13 @@ const MainBanner = () => {
               <div className="flex items-center gap-1">
                 {/* Profile Images */}
                 <div className="flex -space-x-3">
-                  {[1, 2, 3].map((i) => (
+                  {corporateData.map((i, index) => (
                     <div
-                      key={i}
+                      key={index}
                       className="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
                     >
                       <img
-                        src={`https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?uid=R181855209&ga=GA1.1.1524916337.1735299616&semt=ais_hybrid`}
+                        src={i}
                         alt={`Profile ${i}`}
                         className="w-full h-full object-cover"
                       />
@@ -36,25 +40,24 @@ const MainBanner = () => {
                     ))}
                   </div>
                   <span className="ml-2 text-sm font-medium">
-                    100+ Company Boosted
+                    20+ Company Boosted
                   </span>
                 </div>
               </div>
             </div>
 
             {/* Hero Content */}
-            <div className="text-center max-w-4xl mx-auto">
+            <div className="text-center w-full md:max-w-4xl mx-auto">
               <h1 className="heading-style text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-6 leading-tight">
-                Empowering <span className="italic-text">Visionaries</span> to
+                Empowering <span className="">Visionaries</span> to
                 <br />
-                Conquer the Solutions{" "}
-                <span className="italic-text">Digital World.</span>{" "}
+                Conquer the{" "}
+                <span className=" text-primary">Digital World.</span>{" "}
               </h1>
               <p className="text-gray-800 text-base md:text-lg 2xl:text-xl mb-8 max-w-3xl mx-auto">
-                You get expert support to transform your vision into a stunning,
-                professional website. Our tailored solutions help you establish
-                a strong online presence, attract more customers, and grow your
-                business seamlessly.
+                Get expert support to turn your vision into a stunning website.
+                Our tailored solutions build your online presence, attract
+                customers, and drive business growth effortlessly.
               </p>
 
               {/* CTA Buttons */}

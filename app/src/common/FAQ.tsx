@@ -34,8 +34,7 @@ export default function FAQ() {
     <section className=" pb-8 md:pb-16 pt-2 md:pt-8 px-4 md:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-center mb-6 md:mb-12 text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold">
-          Questions? We've Got{" "}
-          <span className="italic text-primary">Answers!</span>
+          Questions? We've Got <span className="text-primary">Answers!</span>
         </h2>
 
         <div className="space-y-4">
@@ -48,7 +47,9 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between py-2 md:py-4 px-4 md:px-6 text-left"
               >
-                <h3 className="font-semibold text-base md:text-lg">{faq.question}</h3>
+                <h3 className="font-semibold text-base md:text-lg">
+                  {faq.question}
+                </h3>
                 <div className="bg-primary text-white rounded-full ml-4">
                   {openIndex === index ? (
                     <ChevronUp size={24} />
