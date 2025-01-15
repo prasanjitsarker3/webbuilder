@@ -31,7 +31,7 @@ export default function GrowthMetrics() {
         {metrics.map((metric, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center text-center bg-purple-50 rounded-lg md:rounded-3xl p-3"
+            className="flex flex-col justify-center items-center text-center bg-gray-100 rounded-lg md:rounded-3xl p-3"
           >
             <div className=" mb-6">
               <div className=" w-20 h-20 lg:w-32 lg:h-32 rounded-full border-2 border-[#7C3AED] flex items-center justify-center">

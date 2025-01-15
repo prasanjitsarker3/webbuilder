@@ -68,6 +68,12 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+
+        <div className=" w-full mx-auto flex justify-center items-center">
+          <button className=" mx-auto py-3 px-16 bg-primary text-white rounded-full">
+            Sell All
+          </button>
+        </div>
       </section>
       )
     </div>

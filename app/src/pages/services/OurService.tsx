@@ -90,8 +90,8 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="py-16 px-4 lg:px-8 bg-gradient-to-b from-purple-50 to-white">
-      <div className=" w-full container mx-auto">
+    <section className="py-16  bg-gradient-to-b from-purple-50 to-white">
+      <div className=" w-full container mx-auto px-4 lg:px-8">
         <h2 className="text-center mb-12">
           <span className="text-2xl lg:text-4xl 2xl:text-5xl font-bold">
             Transform Your Business with{" "}

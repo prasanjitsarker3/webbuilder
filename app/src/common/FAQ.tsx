@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronUp, ChevronDown } from "lucide-react";
+import { ChevronUp, ChevronDown, Plus } from "lucide-react";
 
 const faqs = [
   {
@@ -41,7 +41,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-primary rounded-2xl overflow-hidden bg-white transition-all duration-300"
+              className=" border-b  overflow-hidden bg-white transition-all duration-300"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -54,7 +54,7 @@ export default function FAQ() {
                   {openIndex === index ? (
                     <ChevronUp size={24} />
                   ) : (
-                    <ChevronDown size={24} />
+                    <Plus size={24} />
                   )}
                 </div>
               </button>
