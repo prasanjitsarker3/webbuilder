@@ -65,7 +65,7 @@ const Header = () => {
           </div>
 
           {/* Second Div */}
-          <div className=" hidden md:block flex-1 flex justify-center items-center">
+          <div className=" hidden md:block  flex justify-center items-center ">
             <div className=" text-sm lg:text-base 2xl:text-lg flex items-center text-center gap-4 2xl:gap-6">
               <Link href={"/"} className=" text-[#824EEB] cursor-pointer">
                 Home
@@ -78,6 +78,9 @@ const Header = () => {
                 className=" text-[#824EEB] cursor-pointer"
               >
                 Services
+              </Link>
+              <Link href={"/case"} className=" text-[#824EEB] cursor-pointer">
+                Case
               </Link>
               <Link
                 href={"/pricing"}
@@ -160,6 +163,13 @@ const Header = () => {
               className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
             >
               Services
+            </Link>
+            <Link
+              href={"/case"}
+              onClick={() => setIsOpen(false)}
+              className="text-lg text-black cursor-pointer py-1 px-1 hover:bg-primary hover:text-white"
+            >
+              Case
             </Link>
             <Link
               href={"/pricing"}

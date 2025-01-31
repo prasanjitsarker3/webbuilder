@@ -91,7 +91,7 @@ const services = [
 export default function ServicesGrid() {
   return (
     <section className="py-16  bg-gradient-to-b from-purple-50 to-white">
-      <div className=" w-full container mx-auto px-4 lg:px-8">
+      <div className=" w-full container mx-auto px-2 lg:px-8">
         <h2 className="text-center mb-12">
           <span className="text-2xl lg:text-4xl 2xl:text-5xl font-bold">
             Transform Your Business with{" "}
@@ -101,11 +101,11 @@ export default function ServicesGrid() {
           </span>
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 2xl:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 lg:gap-12 2xl:gap-16">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-white  group"
+              className="bg-white rounded-sm md:rounded-3xl p-2 md:p-6 transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-white  group"
             >
               <div className="text-purple-500 group-hover:text-white mb-4">
                 <service.icon size={24} strokeWidth={1.5} />

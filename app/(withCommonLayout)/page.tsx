@@ -24,7 +24,7 @@ export default function HomePage() {
       <ProfitMarketingPartner />
       <DigitalSolution />
       <Portfolio />
-      <PricingCard />
+      {/* <PricingCard /> */}
       {/* <Testimonials /> */}
       <OurPartner />
       <TeamMember />
